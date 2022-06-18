@@ -1,0 +1,6 @@
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; 
+// \D is equal to the character class [^0-9].
+// Ie: It looks for a single character that is not a number between 0-9.
+// g extracts a pattern more than once. Eg: If repeat is in the sting 3 times, it will find 'repeat', 'repeat', 'repeat'.
+let result = movieName.match(noNumRegex).length;

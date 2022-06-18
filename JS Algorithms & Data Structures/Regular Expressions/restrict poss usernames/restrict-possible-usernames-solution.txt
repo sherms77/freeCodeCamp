@@ -1,0 +1,18 @@
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i; // Change this line
+let result = userCheck.test(username);
+
+// looked at solution
+// applied solution 2
+// refer to restrict-poss-usernames.md for details of my attempts and analysis.
+// CODE EXPLANATION
+// 1.^ - start of input
+// 2.[a-z] - match first character between a-z
+// 3.() - creates a new group
+// 4.[0-9]{2,0} - ends with two or more numbers
+// 5.n{0,0} - quantifier. matches any string that contains a sequence of X to Y n's. first position is start of range, second is end of range. Eg: (t|e|r){2,3} - in the word 'street' it will match at least 2-3 of the characters in the group. It will match 'tre' because there are 3 characters from the group in the word and 'et' because there are two characters from the group in the word also.
+// 6.| - or
+// 7.[a-z]+ - matches a character between a-z at least one or more times.
+// 8.\d* - and ends with zero or more numbers.
+// 9.$ - end of input.
+// 10.\i - ignores case.

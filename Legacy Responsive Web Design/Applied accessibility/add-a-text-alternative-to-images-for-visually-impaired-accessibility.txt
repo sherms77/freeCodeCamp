@@ -1,0 +1,1 @@
+<img src="doingKarateWow.jpeg" alt="Camper Cat doing karate"> <!--added alt attribute to describe image-->

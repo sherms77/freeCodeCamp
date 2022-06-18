@@ -1,0 +1,7 @@
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+
+/* 
+Tests if the variable in myRegex (string to be matched) is in variable myString (string to be searched).
+*/
+let result = myRegex.test(myString); // Change this line

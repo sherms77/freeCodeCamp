@@ -1,0 +1,8 @@
+let haStr = "Hazzzzah";
+let haRegex = /hazz{3,}ah/gi; // Change this line
+let result = haRegex.test(haStr);
+
+// challenge says match 'z' 4 or more times but its actually 3 or more times.
+// hazz{3,}ah - uses quantity specifier to match 'z' in the pattern 'hazzah' 3 or more times. the absence of a second position - upper limit, does not apply an upper limit. only a lower limit is specified and applied.
+// g - global flag - finds pattern anywhere. extracts the pattern more than once.
+// i - ignores case.

@@ -1,0 +1,4 @@
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // \w mathces A-Za-z0-9
+// g extracts a pattern more than once. Eg: If 'repeat' appears in a string three times, it will match repeat, repeat, repeat.
+let result = quoteSample.match(alphabetRegexV2).length;

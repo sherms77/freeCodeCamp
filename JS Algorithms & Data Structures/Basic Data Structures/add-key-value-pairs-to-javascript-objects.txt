@@ -1,0 +1,14 @@
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// Only change code below this line
+foods.bananas = 13; // bananas = 13 // adds property bananas with value 13 to the foods object
+foods['grapes'] = 35;// grapes = 35 // adds property grapes with value 35 to the foods object
+const strawberryProperty = 'strawberries'; // creates strawberryProperty variable which stores the value 'strawberries'. the value in this variable is used as the property to add to the foods object used in the next line.
+foods[strawberryProperty] = 27; // strawberries = 27 // adds property strawberries with value 27 to the foods object
+// Only change code above this line
+
+console.log(foods);

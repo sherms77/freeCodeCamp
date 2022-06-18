@@ -1,0 +1,14 @@
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  let elemCheck = arr.indexOf(elem); // stores result of the .index method in a variable
+
+// if statement checks if elemCheck is >= 0 and returns true if it is and false if it isn't
+  if (elemCheck >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+  // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));

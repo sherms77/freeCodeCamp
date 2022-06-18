@@ -1,0 +1,6 @@
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; 
+// \W searches for the opposite of all alphanumeric characters (which is /w).
+// Ie: It finds everyother character - like '!', in th string.
+// g extract a pattern more than once. Eg: If repeat appears three times in the string it returns 'repeat', 'repeat', 'repeat'. 
+let result = quoteSample.match(nonAlphabetRegex).length;

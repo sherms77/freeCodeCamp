@@ -1,0 +1,5 @@
+<style>
+  body {
+    background-color: #000000; <!--replaced black with hex code equivalent-->
+  }
+</style>

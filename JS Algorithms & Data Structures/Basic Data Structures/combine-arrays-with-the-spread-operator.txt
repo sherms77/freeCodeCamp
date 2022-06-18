@@ -1,0 +1,7 @@
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // uses the spread operator to insert the elements from the fragment array in the middle of the sentence array
+  return sentence;
+}
+
+console.log(spreadOut());

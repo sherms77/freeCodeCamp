@@ -1,0 +1,11 @@
+// JS Promise - makes promise to do something, usually asynchrously.
+// When the task completes, you either keep the promise or fail to do so.
+// Promise is a constructor function, so you need to use the 'new' keyword to create one.
+// It takes a function as it's argument, with two paramaters - resolve and reject.
+// These are methods used to determine the outcome of the promise.
+
+// Syntax:
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  
+});

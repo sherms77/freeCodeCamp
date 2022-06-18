@@ -1,0 +1,8 @@
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+
+// [a-z] lets you match a range of characters.
+// regex below matches all characters between a and z.
+// It will match multiple characters (g flag).
+// And it will ignore case (i flag).
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line

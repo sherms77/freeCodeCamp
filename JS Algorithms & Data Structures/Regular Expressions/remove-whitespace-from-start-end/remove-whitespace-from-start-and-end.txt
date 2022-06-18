@@ -1,0 +1,3 @@
+let hello = "   Hello, World!  ";
+let wsRegex = /(^\s+)|(\s+$)/g; // Finds whitespace at the start an end of the string and uses the /g - global flag to find the match anywhere. ie: it will match all occurrences of the pattern.
+let result = hello.replace(wsRegex, ""); // replaces the matched pattern stored in the wsRegex variable with a blank string - "".

@@ -1,0 +1,8 @@
+<style>
+  body { <!--created style class in body element-->
+    background-color: black;
+    color: green;
+    font-family: monospace;
+      }
+</style>
+<h1> "Hello World" </h1> <!--inherits body elements style class-->

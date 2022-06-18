@@ -1,0 +1,34 @@
+ABOUT
+pseudo code for function
+
+PSEUDO CODE
+function updateRecords(records, id, prop, value) {
+  
+  // rule 2
+  if(prop != 'tracks' && value != '') {
+  	records[id][tracks] = value;
+  } 
+  
+  // rule 3
+  else if(prop == 'tracks' && records.id.hasOwnProperty('tracks')) {
+  	records[id][tracks] = [value];
+  }
+  
+  // rule 4
+  else if(prop == 'tracks' && value != '') { 
+  	records[id][tracks] = ARRAY NAME HERE?.push(value);
+
+  	MIGHT BE THIS - records[id][tracks].push(value); ???
+  
+  }
+  
+  // rule 5 - this might also simply be: else delete records[id][prop];
+  else {
+  	delete records[id][prop];
+  }
+  
+  // rule 1
+  return records;
+}
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');

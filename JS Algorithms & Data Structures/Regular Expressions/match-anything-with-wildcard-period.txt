@@ -1,0 +1,8 @@
+let exampleStr = "Let's have fun with regular expressions!";
+/*
+The wild card character, also known as dot or period, can match any character. 
+Eg: You can use to find all patterns that have a different letter at the start of the word and finds exact matches for the last two.
+Eg: /.un/ will match - fun, nun, run, pun and bun if they are in the string.
+*/
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);

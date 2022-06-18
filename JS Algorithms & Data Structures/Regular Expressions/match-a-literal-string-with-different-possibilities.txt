@@ -1,0 +1,7 @@
+let petString = "James has a pet cat.";
+
+// Alternation or OR operator: |, used to match more than one pattern.
+// It looks for each string.
+// It will return true if only one of the stings match.
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result = petRegex.test(petString);

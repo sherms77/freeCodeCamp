@@ -1,0 +1,27 @@
+<style>
+  body {
+    background-color: #FFFFFF;
+  }
+
+  .green {
+    background-color: hsl(120, 100%, 50%); <!--used the hsl() property to change background-colors of the green, cyan and blue classes. hsl stands for hue, saturation and lightness. Changing the class colors changed the associated div elements. Div stands for Division Element. Its the generic container for flow content.-->
+  }
+
+  .cyan {
+    background-color: hsl(180, 100%, 50%);
+  }
+
+  .blue {
+    background-color: hsl(240, 100%, 50%);
+  }
+
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+</style>
+
+<div class="green"></div>
+<div class="cyan"></div>
+<div class="blue"></div>

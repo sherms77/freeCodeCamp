@@ -1,0 +1,11 @@
+function countToFive() {
+  let firstFive = "12345";
+  let len = firstFive.length;
+ 
+  // Changed the loop condition so it prints 1 to 5 to the console. it ensures that its the right length and accesses all the right index values.
+  for (let i = 0; i < len; i++) {
+    console.log(firstFive[i]);
+  }
+}
+
+countToFive();

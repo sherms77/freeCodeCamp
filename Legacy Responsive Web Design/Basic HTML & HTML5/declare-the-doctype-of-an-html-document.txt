@@ -1,0 +1,7 @@
+<!--code below shows how to declare a doctype.-->
+<!--its used to tell the browser which version of html is being used.-->
+<!--simply putting html shows that the latest version of html is being uses, which is html5-->
+<!DOCTYPE html>
+<html>
+    <h1>I am doing the responsive web design course on freecodecamp.</h1>
+</html>

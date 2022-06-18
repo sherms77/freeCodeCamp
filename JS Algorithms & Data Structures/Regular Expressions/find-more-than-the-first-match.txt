@@ -1,0 +1,10 @@
+let twinkleStar = "Twinkle, twinkle, little star";
+
+/*
+The g flag lets you extract a pattern more than once.
+Eg: if you only put /twinkle/ in your regex, it would only return 'twinkle'. But if you put - /twinkle/gi, it would return "twinkle", "Twinkle".
+The i flag (used to ignore case) can be appended to the g flag.
+You can use multiple flags.
+*/
+let starRegex = /twinkle/gi; // Change this line
+let result = twinkleStar.match(starRegex); // Change this line

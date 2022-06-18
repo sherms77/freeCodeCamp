@@ -1,0 +1,10 @@
+function reverseString(str) {
+  // let backwards is variable to store the reversed string
+  // [...str] - method that splits the string into individual elements and stores it in an array
+  // .reverse() - method that reverses the order of the elements in the array
+  // .join("") - joins the characters back into a single string
+  let backwards = [...str].reverse().join("");
+  return backwards; // outputs the reversed string stored in the backwards variable
+}
+
+reverseString("hello");

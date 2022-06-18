@@ -1,0 +1,7 @@
+let timStr = "Timmmmber";
+let timRegex = /tim{4}ber/gi; // Change this line
+let result = timRegex.test(timStr);
+
+// tim{4}ber - uses quantity specifier {n} to only find the specific number of times the letter 'm' appears in the pattern. the above will only find 'timber' if 'm' appears in it 4 times. there are no lower or upper limits used. if there is no comma after it, it does not act as a lower limit. Ie: 4 or more times.
+// g - global flag. finds pattern everywhere. extracts pattern more than once.
+// i - ignores case.

@@ -1,0 +1,10 @@
+<style>
+  div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto; <!--centered the element using the margin value and stting it to auto-->
+
+  }
+</style>
+<div></div>

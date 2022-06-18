@@ -1,0 +1,25 @@
+// Promise has three states: pending, fulfilled and rejected.
+// Promise in last challenging is in the pending state because I did not add a way to complete the promise.
+// The resolve and reject paramaters given to the promise argument are used to do this.
+// resolve is used when you want the promise to succeed.
+// reject is used when you want it to fail.
+
+
+// Creates promise (constuctor function) with resolve and reject paramaters.
+const makeServerRequest = new Promise((resolve, reject) => {
+  
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+
+// if responseFromServer is true, 'resolve' - keep promise.
+  if(responseFromServer) {
+    resolve("We got the data");
+    // Change this line
+   
+// if responseFromServer is false, 'reject' - don't keep promise (promise fails)
+  } else { 
+    reject("Data not received");
+    // Change this line
+  }
+  
+});

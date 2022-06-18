@@ -1,0 +1,13 @@
+let quoteSample = "3 blind mice.";
+
+// ^ ignores characters to match.
+// This is a negated character set.
+// Eg: [^aeiou] ignores aeiou in the match.
+// Below regex [^aeiou0-9] ignores vowels and numbers 0-9.
+// It matches everything else.
+// It ignores case (i flag), and
+// Matches patterns multiple times (g flag).
+// Eg for g flag: If the is in string 3 times,
+// /the/g will return the, the, the.
+let myRegex = /[^aeiou0-9]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line

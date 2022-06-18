@@ -1,0 +1,6 @@
+// set default paramaters for functions
+// arrow functions (=>) are used to write anonymous functions
+
+// Only change code below this line
+const increment = (number, value = 1) => number + value; // value = 1 sets the value to 1 as a default.  
+// Only change code above this line		           // if no value is passed, default will be 1. 								   // number will be added to 1.	

@@ -1,0 +1,24 @@
+// cannot get recursive call to create range between start and end nums?
+// cannot use endNum - startNum bc that will not create a sequential range between the two numbers.
+// needs to be endNum - 1 to create range.
+// Eg: 5, 10 should be endNum(10) - 1 = 9
+// endNum(9) - 1 = 8
+// endNum(8) - 1 = 7
+// endNum(7) - 1 = 6
+// endNum(6) - 1 = 5 - STOP AT 5.
+
+function rangeOfNumbers(startNum, endNum) {
+  // base case should exit when endNum <= startNum.
+  // if I use startNum <= endNum passes first test.
+  // but does not make sense bc startNum will always.
+  // be <= endNum so will always be true and will execute first.
+  // won't be a base case (exit clause).
+  if(endNum <= startNum) {
+  return [];
+  }
+  else {
+    const arr = rangeOfNumbers(endNum - 1);
+    arr.push(endNum);
+    return arr;
+  }
+};

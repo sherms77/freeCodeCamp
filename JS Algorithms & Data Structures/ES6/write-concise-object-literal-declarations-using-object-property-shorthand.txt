@@ -1,0 +1,11 @@
+const createPerson = (name, age, gender) => {
+  // Only change code below this line 
+  return { // Returns an object
+  // Shorthand for prop and value. Ie: Don't need to put prop: value. Eg: use name instead of name: name.
+    name, 
+    age,
+    gender
+  };
+
+  // Only change code above this line
+};

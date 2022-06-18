@@ -1,0 +1,13 @@
+// Only change code below this line
+class Vegetable { // Creates object using the class keyword
+  constructor(name) { // Class syntax - constructor, used to replace defining a constructor function.
+    this.name = name; // 'this' keyword references the owner object.
+  }
+}
+
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
+
+// Link to explain 'this' keyword: https://www.youtube.com/watch?v=gvicrj31JOM

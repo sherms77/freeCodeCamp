@@ -1,0 +1,32 @@
+<!--created a graphic using CSS-->
+<!--
+START COMMENT
+Manipulatd the square element to create the moon shape:
+1.changed the background-color to transparent,
+2.set border-radius property to 50% to make the circular shape,
+3.changed the box-shadow property to: 
+	a.offset-x to 25px, 
+	b.offset-y to 10px, 
+	c.blur-radius to 0, 
+	d.spread-radius to 0, and 
+	e.color to blue.
+END COMMENT.
+-->
+
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+  }
+
+</style>
+<div class="center"></div>

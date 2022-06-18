@@ -1,0 +1,12 @@
+function rangeOfNumbers(startNum, endNum) {
+  if(endNum < startNum) { // base case - when endNum < startNum stop
+    return []; // returns empty array when base case is met
+    // arr.push(endNum);
+    // return arr;
+  } 
+  else {
+    const arr = rangeOfNumbers(startNum, endNum - 1); // recursive call - decrements endNum
+    arr.push(endNum); // adds each value of endNum to the end of the array
+    return arr; // returns array
+  }
+};

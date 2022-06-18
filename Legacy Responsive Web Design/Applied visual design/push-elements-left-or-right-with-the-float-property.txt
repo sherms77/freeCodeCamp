@@ -1,0 +1,31 @@
+<head>
+  <style>
+    #left {
+
+      width: 50%;
+      float: left; <!--used the float property to push item to the left-->
+    }
+    #right {
+
+      width: 40%;
+      float: right; <!--used the float property to push item to the right-->
+    }
+    aside, section {
+      padding: 2px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+  <section id="left">
+    <h2>Content</h2>
+    <p>Good stuff</p>
+  </section>
+  <aside id="right">
+    <h2>Sidebar</h2>
+    <p>Links</p>
+  </aside>
+</body>

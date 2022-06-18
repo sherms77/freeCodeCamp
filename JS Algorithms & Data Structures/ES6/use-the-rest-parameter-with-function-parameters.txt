@@ -1,0 +1,23 @@
+*/ Old code
+const sum = (x, y, z) => {
+  const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0);
+}
+*/
+
+// Rest paramater syntax is ... followed by function argument/s.
+// reduce() function adds all values together in an array.
+// reduce() syntax is: array.reduce((accumulator - this is initial value, like what is used in a loop, ie: 0 - this is initialzed at the end, currentValue - next value in the array)
+// then to return the sum you: take the accumulator + currentValue, 0 - this initializes accumulator argument to 0, as mentioned above.
+
+// Solution code - using rest paramter
+const sum = (...args) => {
+  return args.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+
+
+// Links
+- challenge: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-the-rest-parameter-with-function-parameters
+- reduce method: https://www.youtube.com/watch?v=g1C40tDP0Bk
+- reduce method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+- rest paramaters: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters

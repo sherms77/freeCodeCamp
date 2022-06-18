@@ -1,0 +1,7 @@
+function popShift(arr) {
+  let popped = arr.pop(); // removes last element of array and assigns it to the variable
+  let shifted = arr.shift(); // removes first element of array and assigns it to the variable
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));

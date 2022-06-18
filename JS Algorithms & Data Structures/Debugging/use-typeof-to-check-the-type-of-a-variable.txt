@@ -1,0 +1,6 @@
+let seven = 7;
+let three = "3";
+console.log(seven + three);
+// Only change code below this line
+console.log(typeof seven); // checks the type data structure or type of value in the variable 'seven'
+console.log(typeof three); // as above but for the variable 'three'

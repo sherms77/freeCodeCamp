@@ -1,0 +1,17 @@
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+#orange-text { <!--added CSS style declaration for id attribute orange text-->
+  color: orange;
+}
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1> <!--added id attribute "orange text-->

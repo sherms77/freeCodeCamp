@@ -1,0 +1,12 @@
+// refer to check-mixed-grouping-characters for more details.
+
+let myString = "Eleanor Roosevelt";
+let myRegex = /(franklin roosevelt)|(eleanor roosevelt)|(franklin [a-z]\. roosevelt)|(eleanor [a-z]\. roosevelt)[^franklin rosevelt]/i; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
+
+// CODE EXPLANATION
+// 1. (franklin roosevelt)|(eleanor roosevelt) - matched franklin or eleanor roosevelt
+// 2. |(franklin [a-z]\. roosevelt)|(eleanor [a-z]\. roosevelt) - or matches franklin or eleanor roosevelt with a middle initial
+// 3. [^franklin rosevelt] - ignores franklin rosevelt
+// 4. /i - ignores case

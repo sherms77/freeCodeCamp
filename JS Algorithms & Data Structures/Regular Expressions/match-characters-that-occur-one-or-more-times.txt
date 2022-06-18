@@ -1,0 +1,13 @@
+let difficultSpelling = "Mississippi";
+
+// The + matches a group of consecutive characters.
+// The character or group of characters appears one or more times in a row.
+// Eg: /a+/ finds one match and returns ["a"] in abc.
+// It would also find a single match in aabc and return ["aa"].
+// If it was checking abab it would find two matches and return ["a", "a"].
+// This is because the a characters or not in a row (consecutive).
+// The regex below will return ["ss"] and ["ss"].
+// the g flag returns multiple patterns, and
+// the i flag ignores case.
+let myRegex = /s+/gi; // Change this line
+let result = difficultSpelling.match(myRegex);

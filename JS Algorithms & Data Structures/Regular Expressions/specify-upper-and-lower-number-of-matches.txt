@@ -1,0 +1,7 @@
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6} no/ig; // Change this line
+let result = ohRegex.test(ohStr);
+
+// oh{3,6} - uses the quantity specifier {} to match 'h' if it appears between 3 and 6 times in a row in the specified pattern. In this case the pattern is 'oh no.'
+// i - ignores case.
+// g - global - looks for the same pattern everywhere. extracts the same pattern more than once.

@@ -1,0 +1,16 @@
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+  
+  // for loop iterates over arr. it uses the length of the array as the number of times to iterate over the array.
+  for (let i = 0; i < arr.length; i++) {
+    // the if statement uses the '.indexOf' method to determine if 'elem' is in 'arr'. '.indexOf' returns -1 if it isn't. if the 'elem' is not in the array then it will add the element - in this case, the entire subarray, to 'newArr'.
+    if (arr[i].indexOf(elem) == -1) {  
+      newArr.push(arr[i]);
+    }
+  }
+  // Only change code above this line
+  return newArr;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));

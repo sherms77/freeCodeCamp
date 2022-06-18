@@ -1,0 +1,6 @@
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+
+// .match() method extracts the actual match you found.
+// You apply the method on the string and pass the regex in the parentheses.
+let result = extractStr.match(codingRegex); // Change this line

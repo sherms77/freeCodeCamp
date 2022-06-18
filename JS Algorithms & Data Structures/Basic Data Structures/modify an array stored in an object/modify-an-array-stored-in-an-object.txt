@@ -1,0 +1,28 @@
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // Only change code below this line
+  userObj['data'].friends.push(friend); // pushes item from the friend argument into the array in the friends property
+  return userObj['data'].friends; // returns the new array from the friends property in the 'child' data object
+  // Only change code above this line
+}
+
+console.log(addFriend(user, 'Pete'));

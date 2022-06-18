@@ -1,0 +1,12 @@
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{1,5})(?=\D{1,1}\d{2,})/i; // Change this line
+let result = pwRegex.test(sampleWord);
+
+// CODE EXPLANATION
+// 1. ?= - positive lookahead. look for but don't match.
+// 2. \w - look for all letters and numbers.
+// 3. {1,5} - quantity specifier. look for patterns between 1 and 5 characters long (consecutively).
+// 4. ?= - positive lookahead. look for but don't match.
+// 5. \D - look for everything but numbers (non-digits).
+// 6. {1,1} - quantity specifier. look for patterns between 1 and 1 characters long (consecutively).
+// 7. \d{2,} - match all number patterns 2 or more numbers long (consecutively).

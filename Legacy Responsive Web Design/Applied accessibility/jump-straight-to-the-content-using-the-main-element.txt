@@ -1,0 +1,12 @@
+<header>
+  <h1>Weapons of the Ninja</h1>
+</header>
+
+<!--added main tags to give addional meaning to my markup. main tag also offers landmark feature for assistive technology-->
+<main>
+
+</main>
+
+
+
+<footer></footer>

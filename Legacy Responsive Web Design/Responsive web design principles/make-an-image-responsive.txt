@@ -1,0 +1,16 @@
+<style>
+.responsive-img {
+
+
+}
+
+<!--made images responsive by adding max-width and height properties to the image class-->
+img {
+  max-width: 100%;
+  height: auto;
+  width: 600px;
+}
+</style>
+
+<img class="responsive-img" src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg" alt="freeCodeCamp stickers set">
+<img src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg" alt="freeCodeCamp stickers set">

@@ -1,0 +1,6 @@
+function convertToF(celsius) {
+  let fahrenheit = celsius * 9/5 + 32; // takes argument from celsius and puts into this formula and stores it in fahrenheit
+  return fahrenheit; // returns the result
+}
+
+convertToF(30);

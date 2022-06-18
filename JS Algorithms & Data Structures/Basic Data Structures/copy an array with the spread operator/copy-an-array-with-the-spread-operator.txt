@@ -1,0 +1,14 @@
+// refer to copy-array-with-the-spread-operator.md for full code explanation
+
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    // Only change code below this line
+    newArr.push([...arr]); // makes copy of arr and adds it to newArr
+    // Only change code above this line
+    num--;
+  }
+  return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));

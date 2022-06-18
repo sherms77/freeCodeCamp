@@ -1,0 +1,35 @@
+// Only change code below this line
+
+// Class key word creates Thermostat object. The class keyword declares a new function.
+class Thermostat { 
+  constructor(value) { // Constructor function.
+    this._value = value; 
+// The value paramater is assigned to the object property with the same name. Ie: value is assigned to thermostat.value. 
+// This is used instead of the object name as it references the object it's in.
+  }
+  
+  
+  // getter
+  // getter function converts the farenheit (F) temperature to celsius (C).
+  get temperature() {
+    return 5/9 * (this._value - 32); // Converts F value to C. this._value is the object property with the paramater value assigned to it.
+  }
+  
+  // setter
+  // setter function sets the temperatur in celsius.
+  // Calling the setter function with a celsius value sets the temperture.
+  set temperature(celsius) { // temperature function takes in the celsius paramater.
+    this._value = celsius * 9.0 / 5 + 32 // Converts the value in the celsius paramater to farenheit.
+  }
+  
+  // The farenheit value from the setter function is sent to the getter function.
+  // The getter function converts the F value to C and ouputs the value in C.
+  
+}
+
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius

@@ -1,0 +1,25 @@
+const users = {
+  Alan: {
+    online: false
+  },
+  Jeff: {
+    online: true
+  },
+  Sarah: {
+    online: false
+  }
+}
+
+function countOnline(usersObj) {
+  // Only change code below this line
+  let count = 0; // sets a counter
+  for (let i in usersObj) { // loops through the properties in in the object
+    if (usersObj[i].online === true) { // checks if the online property in the child object is true
+      count += 1; // if the condition in the if statement is true, it counts the child object (aka the user).
+    } 
+  }
+  return count; // returns the count
+  // Only change code above this line
+}
+
+console.log(countOnline(users));

@@ -1,0 +1,8 @@
+function htmlColorNames(arr) {
+  // Only change code below this line
+  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond'); // used .splice to remove the first two elements of the array and replaced it with 'DarkSalmon' and 'BlanchedAlmond'
+  // Only change code above this line
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));

@@ -1,0 +1,13 @@
+let text = "<h1>Winter is coming</h1>";
+
+// ? character is used for lazy matching.
+// Eg: /t[a-z]*i/ returns ["titani"].
+// The above is a greedy match which is the default for regular expressions.
+// It finds all letters in between t and i.
+// But /t[a-z]*?i/ returns ["ti"] which is a lazy match.
+// A lazy match stops when it meets the match minimum.
+// Regex below finds any one character (. - wildcard character) between < >.
+// * character matches characters that occurs zero or more times.
+// ? character returns a lazy match.
+let myRegex = /<.*?>/; // Change this line
+let result = text.match(myRegex);

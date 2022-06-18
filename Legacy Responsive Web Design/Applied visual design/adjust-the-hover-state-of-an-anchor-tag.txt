@@ -1,0 +1,12 @@
+<style>
+  a {
+    color: #000;
+  }
+  
+a:hover{
+  color: blue; <!--used a psuedo-class to add a rule to change text to blue when the cursor hovers over it-->
+}
+
+
+</style>
+<a href="https://freecatphotoapp.com/" target="_blank">CatPhotoApp</a>

@@ -1,0 +1,10 @@
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/;
+let result = reRegex.test(repeatNum);
+
+// EXPLANATION
+^ - searches for patterns at the start of a string.
+(\d+) - creates capture group for numbers only that occur 1 or more times. + is quantifier for pattern that occurs 1 or more times.
+\s - match white space.
+\1 - match the first capture group.
+$ - searches for patterns at the end of a string.

@@ -1,0 +1,7 @@
+let favWord = "favorite";
+let favRegex = /favou?rite/ig; // Change this line
+let result = favRegex.test(favWord);
+
+// ? - checks for zero or one of the preceeding element. it makes the preceeding element optional.
+// i - ignores case
+// g - finds pattern anywhere

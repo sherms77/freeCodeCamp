@@ -1,0 +1,3 @@
+let reCriminals = /C+/; 
+// C = matches capital C.
+// + = matches capital C 1 or more times if it appears consecutively. Ie: In a row.

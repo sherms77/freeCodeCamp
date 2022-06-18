@@ -1,0 +1,9 @@
+// Setup
+const myArray = [];
+let i = 10; // i is initialized with the value 10
+
+// Only change code below this line
+do { // Does one pass of loop regardless of condition
+  myArray.push(i); // Adds value in i to myArray
+  i++; // Iterates i (adds 1 to i)
+} while (i < 10) /* i < 10 is the condition for the while loop. i is greater than 10 making condition false which exits the loop. */

@@ -1,0 +1,14 @@
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text { <!--added class for blue-text. Putting it second overrides the previous class when applied to an HTML element.-->
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1> <!--applied blue-text class to HTML element. It overrides the previous class-->

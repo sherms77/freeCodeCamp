@@ -1,0 +1,6 @@
+<style>
+    body {
+        background-color: black; <!--added background-color to body-->
+    }
+
+</style>

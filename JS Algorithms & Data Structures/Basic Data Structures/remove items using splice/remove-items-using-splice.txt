@@ -1,0 +1,5 @@
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+arr.splice(1, 4); // used .splice to remove items so array sums to 10. argument one is the position to start from in the array and argument two is the number of elements to remove.
+// Only change code above this line
+console.log(arr);

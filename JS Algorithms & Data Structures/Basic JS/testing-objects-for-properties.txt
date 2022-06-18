@@ -1,0 +1,9 @@
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  /*  if statement checks if property passed to argument is in the object. If it is, it returns the property. */
+  if (obj.hasOwnProperty(checkProp) == true) {
+    return obj[checkProp];
+  };
+  return "Not Found"; /* if property not in object, returns "Not Found." */
+  // Only change code above this line
+}

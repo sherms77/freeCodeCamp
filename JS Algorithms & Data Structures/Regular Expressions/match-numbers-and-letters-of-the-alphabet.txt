@@ -1,0 +1,10 @@
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+
+// [2-6] matches a range of numbers.
+// You can combine a character and number range.
+// Below regex matches characters [h-s] and numbers [2-6].
+// It excludes case (i flag), and
+// includes multiple characters and numbers in the string. Eg: h, h, h or 2, 2, 2.
+// g extracts a pattern more than once.
+let myRegex = /[h-s2-6]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
