@@ -6,11 +6,7 @@
 
 function factorialize(num) {
   for(let i = 1; i <= num; i++) {
-    //  console.log(i * i);
-    let d = num - i; // this does not work
-    // console.log(d);
-    let p = i * d;
-    console.log(p);
+    
   }
 } 
 
