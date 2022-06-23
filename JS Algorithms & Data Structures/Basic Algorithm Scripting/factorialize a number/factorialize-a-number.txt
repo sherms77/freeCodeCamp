@@ -1,0 +1,10 @@
+function factorialize(num) {
+  if (num <= 1) { // base case - if num is <= 1 return 1
+    return 1;
+  } else {
+    return factorialize(num - 1) * num; // recursively calls itself -> subtracts 1 from num in each recursive call and multiplies the product by 1.
+  }
+  
+}
+
+factorialize(5);

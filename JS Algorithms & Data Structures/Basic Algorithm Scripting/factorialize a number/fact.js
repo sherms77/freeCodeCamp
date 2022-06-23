@@ -4,10 +4,15 @@
 // 6 * 4 = 24
 // 24 * 5 = 120
 
+// this code works in fcc editor but does not output anything in node js
+// return statements do not output anything
 function factorialize(num) {
-  for(let i = 1; i <= num; i++) {
-    
+  if (num <= 1) {
+    return 1;
+  } else {
+    return factorialize(num - 1) * num;
   }
+  
 } 
 
 factorialize(5);
