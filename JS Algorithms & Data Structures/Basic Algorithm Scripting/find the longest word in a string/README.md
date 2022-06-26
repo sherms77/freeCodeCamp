@@ -17,5 +17,6 @@ function findLongestWordLength(str) {
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
 # notes
+- 260622: finished challenge. used solution one in the link in resources. it did not work initially becuase i was not comparing the `length` of each word.
 - 260622: found solutions in link in resource 1 in resources section. not working correctly. identifying the first word in the sentence as the longest word which is incorrect.
 - 260622: started
