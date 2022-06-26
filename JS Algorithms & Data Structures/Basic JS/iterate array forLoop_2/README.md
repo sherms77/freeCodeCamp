@@ -1,5 +1,5 @@
 # Notes
-- 220622: created v2 of this folder to move into main freeCodeCamp repo as the original folder is trapped as a submodule.
+- 220622: created v2 of this folder to move it into the main freeCodeCamp repo as the original folder was trapped as a submodule.
 
 # About
 - Course: JS Algorithms & Data Structures
