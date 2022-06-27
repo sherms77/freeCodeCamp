@@ -8,9 +8,9 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 
 # steps
 1. iterate through each sub-array - DONE
-2. find the largest number from each sub-array
-3. save the largest number from each sub-array into a new array
-4. return the `new` array with the largest numbers
+2. find the largest number from each sub-array - DONE
+3. save the largest number from each sub-array into a new array - DONE
+4. return the `new` array with the largest numbers - DONE
 
 # challenge code
 function largestOfFour(arr) {
@@ -24,6 +24,7 @@ largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 85
 2. [Find the largest number in an array JavaScript Tutorial](https://www.youtube.com/watch?v=fOFSmCjvcFY)
 
 # notes
+- 270622: solved challenge. refer to `return-largest-numbers-in-arrays.txt` for final solution.
 - 270622: finished step 1. working on step 2.
 - 270622: working on step 1.
 - 270622: started

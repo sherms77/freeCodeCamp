@@ -1,0 +1,9 @@
+function largestOfFour(arr) {
+  let largeNumArr = []; // empty array to store largest numbers extracted from sub-arrays
+  for (let i = 0; i < arr.length; i++) { // for loop to iterate through parent array
+    largeNumArr.push(Math.max(...arr[i])); // Math.max() method finds the largest number in each sub-array. each of the largest numbers are pushed to the largeNumArr array.
+  }
+  return largeNumArr; // returns largeNumArr array with the largest numbers
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);

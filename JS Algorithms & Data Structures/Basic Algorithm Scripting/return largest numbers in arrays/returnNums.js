@@ -1,19 +1,12 @@
-function largestOfFour(arr) {
-  largeNumArr = []; // array to store the largest num from each sub-array
+// this solution works
+// modified with return statement for fcc
 
+function largestOfFour(arr) {
+  let largeNumArr = []; // array to store the largest num from each sub-array
   // iterates through parent array
   for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i]);
-    // console.log(Math.max(...arr[i])); // this returns the largest number from each sub-array
     largeNumArr.push(Math.max(...arr[i]));
-
-    // let subArray = arr[i];
-    // // iterates through sub-arrays
-    // for (let j =0; j < subArray.length; j++) {
-      // console.log(subArray[j]);
-    // }
   }
-  // return arr;
   console.log(largeNumArr);
 }
 
