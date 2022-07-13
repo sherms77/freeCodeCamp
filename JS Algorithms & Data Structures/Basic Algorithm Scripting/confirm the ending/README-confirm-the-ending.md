@@ -6,8 +6,14 @@ Check if a string (first argument, str) ends with the given target string (secon
 
 This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
 
-# steps
+# rules
+1. the target sting has to be at the end of the string
+2. the target string can vary in length. Eg: 
+  - str = "Hello", target = "o" - result = true
+  - str = "Hello", target = "lo" - result = true
 
+# steps
+1. find a substring at the end of a sting based on the length of the substing `passed` to the `second argument`. 
 
 # challenge code
 function confirmEnding(str, target) {
@@ -25,4 +31,5 @@ confirmEnding("Bastian", "n");
 6. [Regex to extract substring, returning 2 results for some reason](https://stackoverflow.com/questions/3486359/regex-to-extract-substring-returning-2-results-for-some-reason)
 
 # notes
+- 140722: experimented with the substing method. refer to `sub.js`.
 - 140722: started
