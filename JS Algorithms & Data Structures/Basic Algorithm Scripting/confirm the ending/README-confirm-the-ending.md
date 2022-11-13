@@ -13,7 +13,7 @@ This challenge can be solved with the .endsWith() method, which was introduced i
   - str = "Hello", target = "lo" - result = true
 
 # steps
-1. find a substring at the end of a sting based on the length of the substing `passed` to the `second argument`. 
+1. find a substring at the end of a sting based on the length of the substring `passed` to the `second argument`. 
 
 # challenge code
 function confirmEnding(str, target) {
@@ -31,5 +31,6 @@ confirmEnding("Bastian", "n");
 6. [Regex to extract substring, returning 2 results for some reason](https://stackoverflow.com/questions/3486359/regex-to-extract-substring-returning-2-results-for-some-reason)
 
 # notes
+- 101122: refer to notes to `sub.js` and `end.js`
 - 140722: experimented with the substing method. refer to `sub.js`.
 - 140722: started
