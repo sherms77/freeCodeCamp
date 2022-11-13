@@ -31,6 +31,7 @@ confirmEnding("Bastian", "n");
 6. [Regex to extract substring, returning 2 results for some reason](https://stackoverflow.com/questions/3486359/regex-to-extract-substring-returning-2-results-for-some-reason)
 
 # notes
+- 131122: testing `.endsWith()` method to see how it works. refer to `endsWith.js`. accidentally saw part of a solution. migh be able to use `.length` method with `target` argument.
 - 131122: trying to use **regex**. refer to https://regexr.com/728ue and `regexMatching.js`.
 - 101122: refer to notes to `sub.js` and `end.js`
 - 140722: experimented with the substing method. refer to `sub.js`.
