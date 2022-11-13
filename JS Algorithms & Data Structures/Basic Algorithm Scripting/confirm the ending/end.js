@@ -1,6 +1,6 @@
 function confirmEnding(str, target) {
-  let e = str.charAt(str.length-1); // need to match ending characters from str with target -> should I use a regex?
-  // console.log(e);
+  let pattern = /\w+$/i;
+  let result = pattern.test(str);
   if (e == target) {
     return true;
   } else {
