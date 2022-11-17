@@ -30,6 +30,7 @@ confirmEnding("Bastian", "n");
 5. [JavaScript String substring()](https://www.w3schools.com/jsref/jsref_substring.asp)
 6. [Regex to extract substring, returning 2 results for some reason](https://stackoverflow.com/questions/3486359/regex-to-extract-substring-returning-2-results-for-some-reason)
 7. [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes#:~:text=The%20includes()%20method%20performs,true%20or%20false%20as%20appropriate.)
+8. [RegExp.prototype.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
 
 # methods pros and cons
 
@@ -54,7 +55,8 @@ confirmEnding("Bastian", "n");
 
 
 # notes
-- 181122: tried to use `.includes()` method but did not work as it locates the substring to be found anywhere in the parent string. it needs to only be at the end of the string.
+- 181122: refer to `end.js` - trying to use .test() method to test condition and then output correct result. refer to link **8** in resources.
+- 181122: tried to use `.includes()` method but did not work as it locates the substring to be found anywhere in the parent string. it needs to only be at the end of the parent string. refer to link **7** in resources.
 - 141122: experimented with `.length()` and `charAt()` methods to try and `find` the correct method in the `str` argument by using the `target` and `str` arguments to calculate it. refer to `end_char.js` and `end.js`.
 - 131122: testing `.endsWith()` method to see how it works. refer to `endsWith.js`. accidentally saw part of a solution. migh be able to use `.length` method with `target` argument.
 - 131122: trying to use **regex**. refer to https://regexr.com/728ue and `regexMatching.js`.
