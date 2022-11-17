@@ -29,8 +29,32 @@ confirmEnding("Bastian", "n");
 4. [positive and negative lookahead](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/positive-and-negative-lookahead)
 5. [JavaScript String substring()](https://www.w3schools.com/jsref/jsref_substring.asp)
 6. [Regex to extract substring, returning 2 results for some reason](https://stackoverflow.com/questions/3486359/regex-to-extract-substring-returning-2-results-for-some-reason)
+7. [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes#:~:text=The%20includes()%20method%20performs,true%20or%20false%20as%20appropriate.)
+
+# methods pros and cons
+
+## regex method
+
+### pros
+- more precise matching
+- multi-character matching
+
+### cons
+- how to pass string in argument to regex within function
+
+## charAt and length method
+
+### pros
+- match the characters at the end by using .length-1
+
+### cons
+- have to rely on index positions
+- difficult to make index postions dynamic
+- cannot match mult-character strings
+
 
 # notes
+- 181122: tried to use `.includes()` method but did not work as it locates the substring to be found anywhere in the parent string. it needs to only be at the end of the string.
 - 141122: experimented with `.length()` and `charAt()` methods to try and `find` the correct method in the `str` argument by using the `target` and `str` arguments to calculate it. refer to `end_char.js` and `end.js`.
 - 131122: testing `.endsWith()` method to see how it works. refer to `endsWith.js`. accidentally saw part of a solution. migh be able to use `.length` method with `target` argument.
 - 131122: trying to use **regex**. refer to https://regexr.com/728ue and `regexMatching.js`.
