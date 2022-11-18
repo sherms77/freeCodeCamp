@@ -1,18 +1,23 @@
 function confirmEnding(str, target) {
-  // let regEx = /(target)$/; // how do i pass the string in target to the regex?
-  let regEx = /n$/; // testing regex here - it's not detecting it and running it on the .test() method correctly
+  let r = new RegExp(target); // need to make regex to only identify pattern at the end
 
-  if (regEx.test(str) == true) {
+  if (r.test(str) == true) {
     return true;
   } else {
     return false;
   }
+  
+  // if (regEx.test(str) == true) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 
 }
 
-console.log(confirmEnding("Bastian", "p")); // true.
+// console.log(confirmEnding("Bastian", "n")); // true.
 // console.log(confirmEnding("Congratulation", "on")) // should return true.
-// console.log(confirmEnding("Connor", "n")) // should return false.
+console.log(confirmEnding("Connor", "n")) // should return false.
 // console.log(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification")) // should return false.
 // console.log(confirmEnding("He has to give me a new name", "name")) // should return true.
 // console.log(confirmEnding("Open sesame", "same")) // should return true.
