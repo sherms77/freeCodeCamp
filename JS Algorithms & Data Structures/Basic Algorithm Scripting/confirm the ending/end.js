@@ -1,6 +1,9 @@
+// console.log("hello this is a test");
+// console.log("another test");
 function confirmEnding(str, target) {
-  let r = new RegExp(target); // need to make regex to only identify pattern at the end
-  let j = /target$/i; // debug this
+  // let m = target.value(target);
+  let r = new RegExp(target, 'i'); // need to make regex to only identify pattern at the end
+  // let j = /target/i; // does not work - takes regex literal
 
   if (r.test(str) == true) {
     return true;
@@ -8,13 +11,10 @@ function confirmEnding(str, target) {
     return false;
   }
   
-  // if (regEx.test(str) == true) {
-  //   return true;
-  // } else {
-  //   return false;
-  // }
-
 }
+
+console.log(confirmEnding("Connor", "zap")) // false
+console.log(confirmEnding("Connor", "R")) // true
 
 // console.log(confirmEnding("Bastian", "n")); // true.
 // console.log(confirmEnding("Congratulation", "on")) // should return true.
