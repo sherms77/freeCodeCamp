@@ -1,5 +1,6 @@
 function confirmEnding(str, target) {
   let r = new RegExp(target); // need to make regex to only identify pattern at the end
+  let j = /target$/i; // debug this
 
   if (r.test(str) == true) {
     return true;
