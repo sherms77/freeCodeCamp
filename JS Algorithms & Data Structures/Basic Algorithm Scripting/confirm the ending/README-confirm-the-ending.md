@@ -31,6 +31,10 @@ confirmEnding("Bastian", "n");
 6. [Regex to extract substring, returning 2 results for some reason](https://stackoverflow.com/questions/3486359/regex-to-extract-substring-returning-2-results-for-some-reason)
 7. [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes#:~:text=The%20includes()%20method%20performs,true%20or%20false%20as%20appropriate.)
 8. [RegExp.prototype.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
+9. [Regular expressions test() and match()](https://www.youtube.com/watch?v=W7S_Vmq0GSs)
+10. [RegExp object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#:~:text=The%20expression%20new%20RegExp(%2F,in%20a%20string)%20are%20necessary.)
+11. [How to use JavaScript Regex both literal notation and regexp object constructor method with examples](https://www.youtube.com/watch?v=DCnD10KjLYM&t=373s)
+12. [Object.values() in JavaScript](https://www.geeksforgeeks.org/object-values-javascript/#:~:text=values()%20method%20is%20used,is%20applied%20to%20the%20properties.)
 
 # methods pros and cons
 
@@ -55,6 +59,7 @@ confirmEnding("Bastian", "n");
 
 
 # notes
+- 191122: was able to create a method that tests a condition to get the appropriate output - refer to `end.js`. but I unable to add the `$` to the end of the regex of a function **argument** that is passed to the `new RegExp()` method. I asked for help in the [freeCodeCamp forums](https://forum.freecodecamp.org/t/confirm-the-ending-new-regexp-method/572286?u=sherms77). I also asked Kavita for help. Sent her link to my post. **Next steps**: 1. Review responses to my post.
 - 181122: refer to `end.js` - trying to use .test() method to test condition and then output correct result. refer to link **8** in resources.
 - 181122: tried to use `.includes()` method but did not work as it locates the substring to be found anywhere in the parent string. it needs to only be at the end of the parent string. refer to link **7** in resources.
 - 141122: experimented with `.length()` and `charAt()` methods to try and `find` the correct method in the `str` argument by using the `target` and `str` arguments to calculate it. refer to `end_char.js` and `end.js`.
