@@ -59,6 +59,7 @@ confirmEnding("Bastian", "n");
 
 
 # notes
+- 211122: used solution in reply to my [freeCodeCamp post](https://forum.freecodecamp.org/t/confirm-the-ending-new-regexp-method/572286?u=sherms77). it works. refer to `end.js` for final solution and comments. also saved final solution as `confirm-the-ending.txt`.
 - 191122: was able to create a method that tests a condition to get the appropriate output - refer to `end.js`. but I unable to add the `$` to the end of the regex of a function **argument** that is passed to the `new RegExp()` method. I asked for help in the [freeCodeCamp forums](https://forum.freecodecamp.org/t/confirm-the-ending-new-regexp-method/572286?u=sherms77). I also asked Kavita for help. Sent her link to my post. **Next steps**: 1. Review responses to my post.
 - 181122: refer to `end.js` - trying to use .test() method to test condition and then output correct result. refer to link **8** in resources.
 - 181122: tried to use `.includes()` method but did not work as it locates the substring to be found anywhere in the parent string. it needs to only be at the end of the parent string. refer to link **7** in resources.

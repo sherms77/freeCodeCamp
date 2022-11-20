@@ -1,0 +1,7 @@
+function confirmEnding(str, target) {
+  var funcTarget = target + '$';
+  let r = new RegExp(funcTarget, 'i');
+  return r.test(str);
+}
+
+confirmEnding("Bastian", "n");
