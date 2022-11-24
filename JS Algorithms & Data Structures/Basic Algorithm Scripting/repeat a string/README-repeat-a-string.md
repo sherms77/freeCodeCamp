@@ -24,5 +24,6 @@ repeatStringNumTimes("abc", 3);
 # resources
 
 # notes
+- 251122: refer to `repeat-string.js`. code does not work. does not multiply `str` by `num`. will also need to remove condition 1 as outputting `*` is acceptable.
 - 241122: tested for loop. refer to `for_loop.js`.
 - 241122: started
