@@ -8,6 +8,10 @@ Repeat a given string str (first argument) for num times (second argument). Retu
 1. if `num` is not a positive number, return an **empty** string.
 2. do not use `.repeat()` method.
 
+# conditions
+1. test if `str` is an integer -> if **NO** return `str`
+2. test if `num` is a **POSITITVE** number -> if no return `""`
+
 # steps
 
 # challenge code
