@@ -1,20 +1,19 @@
 function repeatStringNumTimes(str, num) {
   var checkNum = Number.isInteger(str);
-  if (checkNum == false) {
-    return str;
-  } else if (num < 0) {
-    return "";
+  if (num < 0) {
+    return "invalid input";
   } else {
-    for (let i = 0; i < num; i++) {
-      return str;
+      for (let i = 0; i < num; i++) {
+        // return str; // does not loop using a return statement in node.js?
+        console.log(str);
     }
   }
     
 }
   
-console.log(repeatStringNumTimes("abc", 3))
+// console.log(repeatStringNumTimes("abc", 3))
 
-// console.log(repeatStringNumTimes("*", 3)) // should return the string ***.
+console.log(repeatStringNumTimes("*", 3)) // should return the string ***.
 // console.log(repeatStringNumTimes("abc", 3)) // should return the string abcabcabc.
 // console.log(repeatStringNumTimes("abc", 4)) // should return the string abcabcabcabc.
 // console.log(repeatStringNumTimes("abc", 1)) // should return the string abc.

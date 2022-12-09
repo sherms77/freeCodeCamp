@@ -22,6 +22,7 @@ function repeatStringNumTimes(str, num) {
 repeatStringNumTimes("abc", 3);
 
 # resources
+1. [JavaScript Number.isInteger( ) Method](https://www.geeksforgeeks.org/javascript-number-isinteger-function/#:~:text=isInteger()%20method%20in%20JavaScript,%2C%20otherwise%2C%20it%20returns%20false.)
 
 # notes
 - 251122: refer to `repeat-string.js`. code does not work. does not multiply `str` by `num`. will also need to remove condition 1 as outputting `*` is acceptable.
