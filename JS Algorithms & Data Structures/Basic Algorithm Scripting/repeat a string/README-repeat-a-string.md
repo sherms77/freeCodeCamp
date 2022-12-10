@@ -12,7 +12,11 @@ Repeat a given string str (first argument) for num times (second argument). Retu
 1. test if `str` is an integer -> if **NO** return `str`
 2. test if `num` is a **POSITITVE** number -> if no return `""`
 
-# steps
+# resources
+1. [Node.js: printing to console without a trailing newline?](https://stackoverflow.com/questions/6157497/node-js-printing-to-console-without-a-trailing-newline)
+2. [vertical output and horizontal output to console.log](https://stackoverflow.com/questions/66914835/vertical-output-and-horizontal-output-to-console-log)
+3. [process.stdout docs](https://nodejs.org/api/process.html#processstdout)
+4. [How to print console without trailing newline in Node.js ?](https://www.geeksforgeeks.org/how-to-print-console-without-trailing-newline-in-node-js/)
 
 # challenge code
 function repeatStringNumTimes(str, num) {
@@ -25,7 +29,8 @@ repeatStringNumTimes("abc", 3);
 1. [JavaScript Number.isInteger( ) Method](https://www.geeksforgeeks.org/javascript-number-isinteger-function/#:~:text=isInteger()%20method%20in%20JavaScript,%2C%20otherwise%2C%20it%20returns%20false.)
 
 # notes
-- 101222: tested code in fcc editor. tried a return statement and a console.log statemtn. did not work. problem is with conditions. `repeat-string.js` has some incorrect outputs. refer to lines `21 and 25` in file for more info. I think I need to flatten the output too so it's not printed in a `horizontal` format not a `vertical` one.
+- 111222: got conditions to work but need to print output in a `horizontal` format. **next step**: read resources to try and work out. `loop_outputs.js` shows how to print in a table format using `nested for loops`.
+- 101222: tested code in fcc editor. tried a return statement and a console.log statement. did not work. problem is with conditions. `repeat-string.js` has some incorrect outputs. refer to lines `21 and 25` in file for more info. I think I need to flatten the output too so it's not printed in a `horizontal` format not a `vertical` one.
 - 251122: refer to `repeat-string.js`. code does not work. does not multiply `str` by `num`. will also need to remove condition 1 as outputting `*` is acceptable.
 - 241122: tested for loop. refer to `for_loop.js`.
 - 241122: started
