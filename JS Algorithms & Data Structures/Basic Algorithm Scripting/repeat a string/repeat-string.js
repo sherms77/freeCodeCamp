@@ -5,8 +5,14 @@ function repeatStringNumTimes(str, num) {
   } else {
       for (let i = 0; i < num; i++) {
         // return str; // does not loop using a return statement in node.js?
-        console.log(str);
+        // console.log(str);
+        // process.stdout.write(str); // does not work in vanilla js
         // console.table([str]); // prints as a table with borders
+        
+        // this block of code does not print everything on one line
+        // let con = ""
+        // con += str;
+        // console.log(con);
     }
   }
     
