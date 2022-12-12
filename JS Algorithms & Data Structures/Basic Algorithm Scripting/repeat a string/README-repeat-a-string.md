@@ -27,8 +27,9 @@ function repeatStringNumTimes(str, num) {
 repeatStringNumTimes("abc", 3);
 
 # notes
+- 131222: code still does not pass all tests in challenge. refer to screenshot. got it to work correctly in `for_loop.js`. **next step**: 1.debug code in `repeat.string.js`.
 - 121222: experimenting with link `5` in `resources` section. unable to get it to work correctly. refer to `for_loop.js`.
-- 111222: got conditions to work but need to print output in a `horizontal` format. **next step**: read resources to try and work out. `loop_outputs.js` shows how to print in a table format using `nested for loops`.
+- 111222: got conditions to work but need to print output in a `horizontal` format. **next step**: 1.read resources to try and work out. `loop_outputs.js` shows how to print in a table format using `nested for loops`.
 - 101222: tested code in fcc editor. tried a return statement and a console.log statement. did not work. problem is with conditions. `repeat-string.js` has some incorrect outputs. refer to lines `21 and 25` in file for more info. I think I need to flatten the output too so it's not printed in a `horizontal` format not a `vertical` one.
 - 251122: refer to `repeat-string.js`. code does not work. does not multiply `str` by `num`. will also need to remove condition 1 as outputting `*` is acceptable.
 - 241122: tested for loop. refer to `for_loop.js`.

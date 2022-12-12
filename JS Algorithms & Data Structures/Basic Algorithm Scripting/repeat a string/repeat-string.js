@@ -1,32 +1,22 @@
 function repeatStringNumTimes(str, num) {
   var checkNum = Number.isInteger(str);
+  // var s = "";
   if (num <= 0) {
-    return "invalid input";
+    return "";
   } else {
-      for (let i = 0; i < num; i++) {
-        // return str; // does not loop using a return statement in node.js?
-        // console.log(str);
-        // process.stdout.write(str); // does not work in vanilla js
-        // console.table([str]); // prints as a table with borders
-        
-        // this block of code does not print everything on one line
-        // let con = ""
-        // con += str;
-        // console.log(con);
+      var s = "";
+      for (var i = 0; i < num; i +=1) {
+        s += str;
     }
   }
-    
+  console.log(s);
 }
   
-// console.log(repeatStringNumTimes("abc", 3))
+console.log(repeatStringNumTimes("*", 3)) // should return the string ***.
 
-// console.log(repeatStringNumTimes("*", 3)) // should return the string ***.
-console.log(repeatStringNumTimes("abc", 3)) // should return the string abcabcabc.
+// console.log(repeatStringNumTimes("abc", 3)) // should return the string abcabcabc.
 // console.log(repeatStringNumTimes("abc", 4)) // should return the string abcabcabcabc.
 // console.log(repeatStringNumTimes("abc", 1)) // should return the string abc.
-
 // console.log(repeatStringNumTimes("*", 8)) // should return the string ********. -> HAS CORRECT OUTPUT BUT ALSO OUTPUTS 'UNDEFINED'
-
 // console.log(repeatStringNumTimes("abc", -2)) // should return an empty string ("").
-
 // console.log(repeatStringNumTimes("abc", 0)) // should return "". -> correct output
