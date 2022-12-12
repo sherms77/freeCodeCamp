@@ -1,7 +1,14 @@
-var s = "hello";
-for (let i = 0; i < 5; i++) {
-    // console.log("Hello");
-    s += i + " "; // does not work -> prints "hello" on multiple lines and also prints numbers 1-4 in iterations on each line
-    console.log(s); 
-
+var s = "";
+// var s = "";
+for (var i = 1; i < 5; i += 1) {
+    s += "hello";  
 }
+console.log(s); // console.log() statement is outside the for loop
+
+// code from link 5 in README-repeat-a-string.md
+// print output on one line
+// var s = "";
+// for(var i = 1; i < 11; i += 1) {
+//   s += i + " ";
+// }
+// console.log(s);
