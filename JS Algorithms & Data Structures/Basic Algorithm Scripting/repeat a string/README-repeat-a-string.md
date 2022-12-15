@@ -26,7 +26,23 @@ function repeatStringNumTimes(str, num) {
 
 repeatStringNumTimes("abc", 3);
 
+# Hints
+Hint 1
+The program is very simple, we have to take a variable and return that variable being repeated certain amount of times. No need to add space or anything, just keep repeating it into one single string.
+
+Hint 2
+You can’t edit strings, you will need to create a variable to store the new string.
+
+Hint 3
+Create a loop to repeat the code as many times as needed.
+
+Hint 4
+Make the variable created store the current value and append the word to it.
+
 # notes
+- 161222: removed condition `var checkNum = Number.isInteger(str);` which did not affect the output. I didn't implement that condition anywhere so it didn't stop the function from outputting `non-integers`. 
+- 161222: reviewed hints. it appears I have followed the hints. unsure why my code does not pass all tests.
+- 161222: i get the correct output but I also get an `undefined` error. ther code does not work in the fcc editor. it fails tests `1-5`.
 - 131222: code still does not pass all tests in challenge. refer to screenshot. got it to work correctly in `for_loop.js`. **next step**: 1.debug code in `repeat.string.js`.
 - 121222: experimenting with link `5` in `resources` section. unable to get it to work correctly. refer to `for_loop.js`.
 - 111222: got conditions to work but need to print output in a `horizontal` format. **next step**: 1.read resources to try and work out. `loop_outputs.js` shows how to print in a table format using `nested for loops`.
