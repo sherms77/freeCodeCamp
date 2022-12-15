@@ -5,15 +5,16 @@ function repeatStringNumTimes(str, num) {
     return "";
   } else {
       var s = "";
-      for (var i = 0; i < num; i +=1) {
-        s += str;
+      for (var i = 0; i < num; i++) {
+        // s += str;
+        s = str + str;
     }
   }
   console.log(s);
 }
   
-console.log(repeatStringNumTimes("*", 3)) // should return the string ***.
-console.log(repeatStringNumTimes("abc", 3)) // should return the string abcabcabc.
+console.log(repeatStringNumTimes("*", 4)) // should return the string ***.
+// console.log(repeatStringNumTimes("abc", 3)) // should return the string abcabcabc.
 // console.log(repeatStringNumTimes("abc", 4)) // should return the string abcabcabcabc.
 // console.log(repeatStringNumTimes("abc", 1)) // should return the string abc.
 // console.log(repeatStringNumTimes("*", 8)) // should return the string ********. -> HAS CORRECT OUTPUT BUT ALSO OUTPUTS 'UNDEFINED'

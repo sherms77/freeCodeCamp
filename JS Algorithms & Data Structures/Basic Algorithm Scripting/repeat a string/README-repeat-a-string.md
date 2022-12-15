@@ -18,6 +18,7 @@ Repeat a given string str (first argument) for num times (second argument). Retu
 3. [process.stdout docs](https://nodejs.org/api/process.html#processstdout)
 4. [How to print console without trailing newline in Node.js ?](https://www.geeksforgeeks.org/how-to-print-console-without-trailing-newline-in-node-js/)
 5. [Javascript for loop console print in one line](https://stackoverflow.com/questions/33089739/javascript-for-loop-console-print-in-one-line)
+6. [Difference between ++ and +=1 in javascript](https://stackoverflow.com/questions/17241877/difference-between-and-1-in-javascript)
 
 # challenge code
 function repeatStringNumTimes(str, num) {
@@ -40,6 +41,8 @@ Hint 4
 Make the variable created store the current value and append the word to it.
 
 # notes
+- 161222: i increased the number in the argument from `3` to `4` and i got the same output -> string only repeated `twice`. I am not `appending` the string correctly. **next step**: 1. work out how to append the string correctly to get the string to `repeat` the correct number of times.
+- 161222: analysing my `for loop` conditions. established that `i++` and `i+=1` are the `same` -> refer to link `6` in `resources` section. there is a problem with my `initaliser` and `i < num` condition. it does `not` repeat the string the correct amount of times.
 - 161222: removed condition `var checkNum = Number.isInteger(str);` which did not affect the output. I didn't implement that condition anywhere so it didn't stop the function from outputting `non-integers`. 
 - 161222: reviewed hints. it appears I have followed the hints. unsure why my code does not pass all tests.
 - 161222: i get the correct output but I also get an `undefined` error. ther code does not work in the fcc editor. it fails tests `1-5`.
