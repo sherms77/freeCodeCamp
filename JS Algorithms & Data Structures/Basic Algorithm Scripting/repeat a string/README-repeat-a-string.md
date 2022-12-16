@@ -41,6 +41,7 @@ Hint 4
 Make the variable created store the current value and append the word to it.
 
 # notes
+- 171222: still trying to get the condition correct. refer to `loop-function-test.js`. isolated for loop to analyse. used `js visualiser` to debug.
 - 161222: i increased the number in the argument from `3` to `4` and i got the same output -> string only repeated `twice`. I am not `appending` the string correctly. **next step**: 1. work out how to append the string correctly to get the string to `repeat` the correct number of times.
 - 161222: analysing my `for loop` conditions. established that `i++` and `i+=1` are the `same` -> refer to link `6` in `resources` section. there is a problem with my `initaliser` and `i < num` condition. it does `not` repeat the string the correct amount of times.
 - 161222: removed condition `var checkNum = Number.isInteger(str);` which did not affect the output. I didn't implement that condition anywhere so it didn't stop the function from outputting `non-integers`. 
