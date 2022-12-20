@@ -1,7 +1,8 @@
 var s = "";
 // var s = "";
-for (var i = 1; i < 5; i += 1) {
-    s += "hello";  
+for (var i = 1; i <= 2; i += 1) {
+    // s += "hello";  
+    s += "*";
 }
 console.log(s); // console.log() statement is outside the for loop
 
