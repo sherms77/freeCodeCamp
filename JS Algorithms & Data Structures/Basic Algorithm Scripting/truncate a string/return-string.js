@@ -1,13 +1,11 @@
 // return a string if the length of 'str' is < 'num'
 function returnString(str, num) {
-    // var strLength = str.length; // don't need this variable
-    // if condition to return false if string is too long
-    // if (strLength > num) { 
+   // if length of `str` > 'num` return `string is too long`
     if (str.length > num) {
-        return false;
+        return "string is too long";
     }
     
-    // else condition to return string if above condition is 'not' true 
+    // else return string if above condition is 'not' true 
     else {
         return str;
     }

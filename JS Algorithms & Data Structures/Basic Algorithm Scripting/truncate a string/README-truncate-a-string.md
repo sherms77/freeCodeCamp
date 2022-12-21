@@ -19,4 +19,5 @@ function truncateString(str, num) {
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
 
 # notes
+- 221222: refer to `return-string.js` and `len-function.js`. tested `.length` function and `condition` to return output `if` `num` > `str` arguments. **next steps**: 1. use conditions in `truncate.js`. 2. build out third condition to add `...` to the end of the string if `num` > `str`.
 - 211222: started
