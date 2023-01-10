@@ -21,6 +21,7 @@ function truncateString(str, num) {
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
 
 # notes
+- 110122: passed challenge. used `slice`. refer to `truncate.js` for solution.
 - 100122: might need to use `indexing`. ie: output string from designated `index positions`.
 - 100122: used `return str.length-num + '...';` but it returns `str` as the number of characters.
 - 100122: added conditions to `truncate.js`. need to modify condition 1 to show `...` at the end of the string if it's too long. Ie: if it exceeds the length passed in `num` argument.

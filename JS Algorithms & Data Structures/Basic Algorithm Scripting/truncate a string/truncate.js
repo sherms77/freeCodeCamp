@@ -5,7 +5,7 @@ function truncateString(str, num) {
     return str;
   }
 }
-  
+
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8)) // should return the string A-tisket....
 console.log(truncateString("Peter Piper picked a peck of pickled peppers", 11)) // should return the string Peter Piper....
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length)) // should return the string A-tisket a-tasket A green and yellow basket.
