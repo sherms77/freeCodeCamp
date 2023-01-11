@@ -10,7 +10,8 @@ Create a function that looks through an array arr and returns the first element 
 3. the `truth test` is: `if` argument `(x)` in the `func` function is `true` return -> the `first element`. `if` `false` return -> `undefined`.
 
 # questions
-1. understand what's being passed to the function in the argument for function `findElement(arr, func)`.
+1. understand what's being passed to the function in the argument for function `findElement(arr, func)`. when does it make argument `func` in the parent function `findElement(arr, func)` `true` in order to pass the `truth test`.
+2. what are `arrow` functions and how do they work?
 
 # resources
 
@@ -23,4 +24,5 @@ function findElement(arr, func) {
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 # notes
+- 120123: setup repo and wrote README file. broke down problem into rules and started to identify questions.
 - 120123: started
