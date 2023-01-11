@@ -1,5 +1,5 @@
 # fcc challenge
-- [truncate a string]()
+- [truncate a string](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/truncate-a-string)
 
 # challenge
 Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending.
@@ -21,9 +21,9 @@ function truncateString(str, num) {
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
 
 # notes
-- 110122: passed challenge. used `slice`. refer to `truncate.js` for solution.
-- 100122: might need to use `indexing`. ie: output string from designated `index positions`.
-- 100122: used `return str.length-num + '...';` but it returns `str` as the number of characters.
-- 100122: added conditions to `truncate.js`. need to modify condition 1 to show `...` at the end of the string if it's too long. Ie: if it exceeds the length passed in `num` argument.
+- 110123: passed challenge. used `slice`. refer to `truncate.js` for solution.
+- 100123: might need to use `indexing`. ie: output string from designated `index positions`.
+- 100123: used `return str.length-num + '...';` but it returns `str` as the number of characters.
+- 100123: added conditions to `truncate.js`. need to modify condition 1 to show `...` at the end of the string if it's too long. Ie: if it exceeds the length passed in `num` argument.
 - 221222: refer to `return-string.js` and `len-function.js`. tested `.length` function and `condition` to return output `if` arguments: `num` > `str`. **next steps**: 1. use conditions in `truncate.js`. 2. build out third condition to add `...` to the end of the string if `num` > `str`.
 - 211222: started
