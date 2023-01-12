@@ -14,6 +14,8 @@ Create a function that looks through an array arr and returns the first element 
 2. what are `arrow` functions and how do they work?
 
 # resources
+1. [ES6: Arrow Functions](https://javascript.plainenglish.io/es6-arrow-function-784f8848d271)
+2. [What is the inline function in JavaScript ?](https://www.geeksforgeeks.org/what-is-the-inline-function-in-javascript/)
 
 # challenge code
 function findElement(arr, func) {
@@ -24,5 +26,7 @@ function findElement(arr, func) {
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 # notes
+- 130123: how can i call an `arrow` function? can I call it or can it only live as an argument within another function? finish reading link `1` in resources.
+- 130123: reading about `arrow` functions - aka an `inline` or `anonymous` function.
 - 120123: setup repo and wrote README file. broke down problem into rules and started to identify questions.
 - 120123: started
