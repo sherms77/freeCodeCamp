@@ -17,6 +17,7 @@ Create a function that looks through an array arr and returns the first element 
 1. [ES6: Arrow Functions](https://javascript.plainenglish.io/es6-arrow-function-784f8848d271)
 2. [What is the inline function in JavaScript ?](https://www.geeksforgeeks.org/what-is-the-inline-function-in-javascript/)
 3. [Arrow Functions - Beau teaches JavaScript](https://www.youtube.com/watch?v=22fyYvxz-do)
+4. [THIS keyword - Beau teaches JavaScript](https://www.youtube.com/watch?v=eOI9GzMfd24)
 
 # challenge code
 function findElement(arr, func) {
@@ -27,6 +28,9 @@ function findElement(arr, func) {
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 # notes
+- 200123: need to get/traverse each inidividual element from an `array`. refer to `trav_arr.js` -> `look for solution`. did some `scafolding` in `finders.js` to step out `algorithm`.
+- 200123: still watching video in link `4` in `resources`. will finish later.
+- 190123: watched video in link `3` in `resources`. finish watching video in link `4` in `resources`.
 - 160123: finish watching video in link `3` of `resources`. in response to question in comment on `130123`, i think arrow functions can only live within another method, class, object or as an argument for another function. its designed to not to be `reusable`. Ie: one time use to help perform an operation or for one time execution.
 - 160123: read link `1` in `resources`.
 - 130123: how can i call an `arrow` function? can I call it or can it only live as an argument within another function? finish reading link `1` in resources. also refer to `arrow.js` for testing.
