@@ -28,6 +28,7 @@ function findElement(arr, func) {
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 # notes
+- 210123: traversed array in `trav_arr.js`. working out how and where to put `if` condition. will test and ask group if I can put `if` condition in `expression 2` in `for` loop statement. refer to `finders.js`.
 - 200123: need to get/traverse each inidividual element from an `array`. refer to `trav_arr.js` -> `look for solution`. did some `scafolding` in `finders.js` to step out `algorithm`.
 - 200123: still watching video in link `4` in `resources`. will finish later.
 - 190123: watched video in link `3` in `resources`. finish watching video in link `4` in `resources`.
