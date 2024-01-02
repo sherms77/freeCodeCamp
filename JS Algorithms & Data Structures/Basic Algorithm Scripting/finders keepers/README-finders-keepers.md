@@ -29,6 +29,9 @@ function findElement(arr, func) {
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 # notes
+- 030124: my logic is flawed (logic error). it's always going to be arr_element != num which will always return `undefined`. need to put in a `test` to check if `arr_element === num` if `true` return `num` if `false` return `undefined`.
+- 020124: unsure how to look through array correctly and check if each element meets the condition. the else statement repeats the number of times the length of the array. the if statement works ok. refer to `test.js`.
+- 010124: trying to workout how to check and verify if num is in array. need to know how to set num and then check if it meets condition
 - 240123: decided to forget about trying to workout if I can put an `if` condition into `expression 2` of the for loop. can possibly refactor code if this is possible. currently trying to understand how `num` is passed to the `arrow` function and if and how I need to use `num` to traverse the `array` in the `arr` argument. read `hint`. refer to `finders.js` and link `5` in `resources`.
 - 210123: traversed array in `trav_arr.js`. working out how and where to put `if` condition. will test and ask group if I can put `if` condition in `expression 2` in `for` loop statement. refer to `finders.js`.
 - 200123: need to get/traverse each inidividual element from an `array`. refer to `trav_arr.js` -> `look for solution`. did some `scafolding` in `finders.js` to step out `algorithm`.
