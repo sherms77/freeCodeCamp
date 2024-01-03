@@ -29,6 +29,7 @@ function findElement(arr, func) {
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
 # notes
+- 030124: solved lesson. set num === 8 as specified in the test for the lesson.
 - 030124: my logic is flawed (logic error). it's always going to be arr_element != num which will always return `undefined`. need to put in a `test` to check if `arr_element === num` if `true` return `num` if `false` return `undefined`.
 - 020124: unsure how to look through array correctly and check if each element meets the condition. the else statement repeats the number of times the length of the array. the if statement works ok. refer to `test.js`.
 - 010124: trying to workout how to check and verify if num is in array. need to know how to set num and then check if it meets condition
