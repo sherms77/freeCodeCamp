@@ -25,5 +25,6 @@ function titleCase(str) {
 titleCase("I'm a little tea pot");
 
 # notes
+- 100124: solved lesson. refer to `title.js.`
 - 070124: works but only if input sting is in lower case. need to take input string, convert it all into lower case and then parse it so it capitalizes the first letter of each word in the string. refer to `title.js`.
 - 050124: started

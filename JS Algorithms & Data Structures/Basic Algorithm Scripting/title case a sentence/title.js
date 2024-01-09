@@ -1,7 +1,8 @@
 // need to convert input string to lower case first.
 
 function titleCase(str) {
-    const w = str.split(" ");
+    const lower = str.toLowerCase();
+    const w = lower.split(" ");
 
     for (let i = 0; i < w.length; i++) {
         w[i] = w[i][0].toUpperCase() + w[i].substring(1);
