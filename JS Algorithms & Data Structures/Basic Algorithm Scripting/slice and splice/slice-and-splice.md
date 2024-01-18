@@ -43,12 +43,12 @@ function frankenSplice(arr1, arr2, n) {
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 
 # notes
-190124: refer to `slice.js`. got code to pass all tests except test **6**. unsure how to make the second array stay the **same** after the function runs? need to understand this paramter better.
-180124: i need to unpack the elements because the output should be `[4, 1, 2, 3, 5]`. the arrays should **not** be **nested** within eachother.
-180124: got splice method to work as intended in `slice.js` but does not pass tests in `fcc`. something is wrong with my logic. REREAD lesson paramaters/rules. I need to **copy** the first array into the second array. does `.splice()` method **not** respect this rule?
-160124: watching video in point 1 in resources to better understand `splice` method. refer to `copy.js`.
-160124: fixed code to copy elements from **original** array only once. `let newArr = origArr.concat(arrAdd);`.
-150124: refer to `copy.js`. `concat()` method adds/copies array elements from the **original** array twice?
-150124: i misread/misunderstood the lesson. index `n` is where the elements from `arr1` **need** to be **inserted** into `arr2`.
+- 190124: refer to `slice.js`. got code to pass all tests except test **6**. unsure how to make the second array stay the **same** after the function runs? need to understand this paramter better.
+- 180124: i need to unpack the elements because the output should be `[4, 1, 2, 3, 5]`. the arrays should **not** be **nested** within eachother.
+- 180124: got splice method to work as intended in `slice.js` but does not pass tests in `fcc`. something is wrong with my logic. REREAD lesson paramaters/rules. I need to **copy** the first array into the second array. does `.splice()` method **not** respect this rule?
+- 160124: watching video in point 1 in resources to better understand `splice` method. refer to `copy.js`.
+- 160124: fixed code to copy elements from **original** array only once. `let newArr = origArr.concat(arrAdd);`.
+- 150124: refer to `copy.js`. `concat()` method adds/copies array elements from the **original** array twice?
+- 150124: i misread/misunderstood the lesson. index `n` is where the elements from `arr1` **need** to be **inserted** into `arr2`.
 - 110124: trying to understand where copied elements should be inserted in `arr2`. lesson says at index `n`. however, index `n` in some of the function calls is `1` but the copied elements is inserted at index `0` and only element `0` from `arr1` is inserted at index `0` in `arr2` and the last element in `arr2` is inserted at the end of `arr1`. Eg: in test 1 the elements in `arr1` are "sandwiched" between the elements in `arr2`.
 - 110124: started. setup files.

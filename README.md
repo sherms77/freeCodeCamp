@@ -1,1 +1,2 @@
-Solutions to FreeCodeCamp challenges.
+- Solutions to FreeCodeCamp challenges.
+- The JS Algorithms & Data Structures became **legacy** in Dec 2023. [Article](https://www.freecodecamp.org/news/learn-javascript-with-new-data-structures-and-algorithms-certification-projects/).
