@@ -43,7 +43,7 @@ function frankenSplice(arr1, arr2, n) {
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 
 # notes
-190124: refer to `slice.js`. got code to pass all tests except test **6**. unsure how to make the second array stay the **same** after the function runs?
+190124: refer to `slice.js`. got code to pass all tests except test **6**. unsure how to make the second array stay the **same** after the function runs? need to understand this paramter better.
 180124: i need to unpack the elements because the output should be `[4, 1, 2, 3, 5]`. the arrays should **not** be **nested** within eachother.
 180124: got splice method to work as intended in `slice.js` but does not pass tests in `fcc`. something is wrong with my logic. REREAD lesson paramaters/rules. I need to **copy** the first array into the second array. does `.splice()` method **not** respect this rule?
 160124: watching video in point 1 in resources to better understand `splice` method. refer to `copy.js`.
