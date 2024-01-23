@@ -34,6 +34,7 @@ Return the resulting array. The input arrays should remain the same after the fu
 
 # resources
 1. [splice method](https://www.youtube.com/watch?v=FFas8cMHVwg)
+2. [how to clone and array in JS](https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/)
 
 # lesson code
 function frankenSplice(arr1, arr2, n) {
@@ -43,6 +44,7 @@ function frankenSplice(arr1, arr2, n) {
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 
 # notes
+- 240124: refer to `copy.js` trying to use the `spread operator` to copy `arr1` into `arr2`. my method **pushes/replaces** the last element in `arr2`. trying to debug. refer to [debug console](https://pythontutor.com/render.html#mode=display).
 - 190124: refer to `slice.js`. got code to pass all tests except test **6**. unsure how to make the second array stay the **same** after the function runs? need to understand this paramter better.
 - 180124: i need to unpack the elements because the output should be `[4, 1, 2, 3, 5]`. the arrays should **not** be **nested** within eachother.
 - 180124: got splice method to work as intended in `slice.js` but does not pass tests in `fcc`. something is wrong with my logic. REREAD lesson paramaters/rules. I need to **copy** the first array into the second array. does `.splice()` method **not** respect this rule?
