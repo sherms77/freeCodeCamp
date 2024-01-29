@@ -45,7 +45,7 @@ function frankenSplice(arr1, arr2, n) {
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
 
 # notes
-- 290124: looked up hint. following steps in hint. up to **hint 2**. refer to link 3 in resources and files `loop.js` and `slice_test.js`.
+- 290124: looked up hints. following steps in hints. up to **hint 2**. refer to link 3 in resources and files `loop.js` and `slice_test.js`.
 - 240124: refer to `copy.js` trying to use the `spread operator` to copy `arr1` into `arr2`. my method **pushes/replaces** the last element in `arr2`. trying to debug. refer to [debug console](https://pythontutor.com/render.html#mode=display).
 - 190124: refer to `slice.js`. got code to pass all tests except test **6**. unsure how to make the second array stay the **same** after the function runs? need to understand this paramter better.
 - 180124: i need to unpack the elements because the output should be `[4, 1, 2, 3, 5]`. the arrays should **not** be **nested** within eachother.
