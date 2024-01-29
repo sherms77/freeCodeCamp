@@ -1,4 +1,5 @@
 # Notes
+- 300124: deleted folder `profile lookup`. was having issues committing that file. all files were copied to `profile lookup_2`.
 - 220622: created v2 of this folder to move it into the main freeCodeCamp repo as the original folder was trapped as a submodule.
 
 # About
