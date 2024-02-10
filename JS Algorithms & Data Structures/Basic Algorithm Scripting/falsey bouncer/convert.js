@@ -1,1 +1,0 @@
-// convert a value to a boolean

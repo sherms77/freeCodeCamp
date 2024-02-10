@@ -1,7 +1,9 @@
 function bouncer(arr) {
+    // copies the array
     let copyArr = arr.slice();
     console.log(copyArr);
-    return arr;
+    
+    // return arr;
   }
   
 // bouncer([7, "ate", "", false, 9]);

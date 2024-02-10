@@ -29,7 +29,7 @@ You should not mutate arr.
 
 # steps
 1. copy `arr` - **DONE**
-2. convert each value to a `boolean`
+2. convert each value to a `boolean` - **DONE**
 3. iterate/check each element in the array
 4. find the `false` values
 5. remove the `false` values
@@ -47,5 +47,6 @@ function bouncer(arr) {
 bouncer([7, "ate", "", false, 9]);
 
 # notes
+- 100224: refer to `boolean.js`. converted values to **primitive booleans**.
 - 060224: used `slice()` to copy `arr`. researching how to convert a value to a `boolean`. refer to point 2 in resources.
 - 300124: started. setup files.
