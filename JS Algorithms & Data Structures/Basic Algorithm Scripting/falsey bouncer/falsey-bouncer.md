@@ -47,6 +47,12 @@ function bouncer(arr) {
 bouncer([7, "ate", "", false, 9]);
 
 # notes
+- 100224: refer to `falsy.js`. tyring to convert **values** back from `boolean` values and `return` new array with `true` values only.
+- 100224: need to work out how to:
+  1. check each element in the array
+  2. find the `false` ones
+  3. **remove** them
+  4. `return` the array with the `false` values **reomved**
 - 100224: refer to `boolean.js`. converted values to **primitive booleans**.
 - 060224: used `slice()` to copy `arr`. researching how to convert a value to a `boolean`. refer to point 2 in resources.
 - 300124: started. setup files.
