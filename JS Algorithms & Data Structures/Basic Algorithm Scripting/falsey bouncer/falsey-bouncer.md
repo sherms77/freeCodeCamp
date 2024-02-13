@@ -47,7 +47,8 @@ function bouncer(arr) {
 bouncer([7, "ate", "", false, 9]);
 
 # notes
-- 100224: refer to `boolean.js`. trying to get array elements to be added to the same array. it print out new elements one at a time in a new array. the elements are not **appended** to the array.
+- 140224: refer to `boolean.js`. still trying to append values to an array if it meets a condition. it keeps setting the array to **empty** in my logic everytime I execute the code. have to work out how get it to append the array after the first value has been saved and the condition is met. might need to use a loop?
+- 100224: refer to `boolean.js`. trying to get array elements to be added to the same array and print out new elements one at a time in a new array. the elements are not **appended** to the array.
 - 100224: refer to `falsy.js`. tyring to convert **values** back from `boolean` values and `return` new array with `true` values only.
 - 100224: need to work out how to:
   1. check each element in the array
