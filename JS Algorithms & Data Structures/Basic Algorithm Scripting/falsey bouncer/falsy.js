@@ -1,7 +1,13 @@
+// clone array
+// iterate cloned array
+// test if element is true or false
+// save true elements to results array
+// return results array with elements that are true only
+
+let new_arr = [];
+
 function bouncer(arr) {
     let copyArr = arr.slice();// copies the array
-    // let newArr [];
-    // console.log(copyArr);
 
     // iterates array
     for(let i = 0; i < copyArr.length; i++) {
@@ -9,10 +15,6 @@ function bouncer(arr) {
         
         // console.log(!!copyArr[i]);
         let result = !!copyArr[i]; // converts to boolean values
-        
-        // HOW DO I CONVERT IT BACK TO NON BOOLEAN VALUES? THEN
-        // STORE THE TRUE ONES IN A NEW ARRAY? AND THEN 
-        // RETURN THE ARRAY WITH THE "TRUE" VALUES ONLY?
         
         let newArr = [];
         if (result === true) {
