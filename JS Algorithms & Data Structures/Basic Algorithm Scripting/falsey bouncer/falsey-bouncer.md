@@ -47,6 +47,7 @@ function bouncer(arr) {
 bouncer([7, "ate", "", false, 9]);
 
 # notes
+- 160224: `falsy.js` passes tests in node.js but does not pass tests in **fcc editor**. unsure if use of `!!` is allowed in **fcc**. **Next steps**: 1. debug current code in `falsy.js`. 2. explore alternative methods to convert vaues to a boolean and test if its **true** or **false**.
 - 150224: building out `falsy.js` with each component.
 - 150224: refer to `function_add.js`. how to use `.push()` to add new elements to an array. will need to avoid adding them to the array as **nested** arrays. 
 - 140224: refer to `boolean.js`. still trying to append values to an array if it meets a condition. it keeps setting the array to **empty** in my logic everytime I execute the code. have to work out how get it to append the array after the first value has been saved and the condition is met. might need to use a loop?
