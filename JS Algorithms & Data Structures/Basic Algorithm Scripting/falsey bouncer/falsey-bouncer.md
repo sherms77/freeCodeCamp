@@ -47,6 +47,7 @@ function bouncer(arr) {
 bouncer([7, "ate", "", false, 9]);
 
 # notes
+- 160224: i defined `let newArr = [];` in the function in the **fcc editor** and it worked. lesson solved. refer to `falsy-bouncer.txt` for solution.
 - 160224: `falsy.js` passes tests in node.js but does not pass tests in **fcc editor**. unsure if use of `!!` is allowed in **fcc**. **Next steps**: 1. debug current code in `falsy.js`. 2. explore alternative methods to convert vaues to a boolean and test if its **true** or **false**.
 - 150224: building out `falsy.js` with each component.
 - 150224: refer to `function_add.js`. how to use `.push()` to add new elements to an array. will need to avoid adding them to the array as **nested** arrays. 
