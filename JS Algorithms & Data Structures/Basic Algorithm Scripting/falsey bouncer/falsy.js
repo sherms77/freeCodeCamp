@@ -1,5 +1,4 @@
 let newArr = [];
-
 function bouncer(arr) {
     // iterates array
     for(let i = 0; i < arr.length; i++) {
