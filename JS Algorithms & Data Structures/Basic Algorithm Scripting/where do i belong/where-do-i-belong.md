@@ -19,6 +19,8 @@ eg: [3,5,19,20] - `19` should be inserted at index `2`.
 1. how do i sort the elements in an array?
 
 # resources
+1. [16.9: Array Functions: sort() - Topics of JavaScript/ES6](https://www.youtube.com/watch?v=MWD-iKzR2c8&t=182s)
+2. [JavaScript Sort Array - How to Sort an Array Accurately](https://www.freecodecamp.org/news/how-to-sort-javascript-array-accurately/)
 
 # lesson code
 function getIndexToIns(arr, num) {
@@ -46,5 +48,6 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 170224: refer to `sort.js`. trying to understand example from fcc article.
 - 170224: find out how to sort the elements in an array so they are in ascending order.
 - 170224: started. setup files.
