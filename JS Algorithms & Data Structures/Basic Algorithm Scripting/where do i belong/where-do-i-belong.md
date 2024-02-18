@@ -48,6 +48,7 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
-- 170224: refer to `sort.js`. trying to understand example from fcc article.
+- 190224: still confused by how example sort comparison function works. refer to `sort.js`. posted question in fb group: "HTML, CSS & Javascript." watched video in link 1 in **resources** but still don't understand.
+- 170224: refer to `sort.js`. trying to understand example from fcc article. **debug** the example to understand what's happening.
 - 170224: find out how to sort the elements in an array so they are in ascending order.
 - 170224: started. setup files.
