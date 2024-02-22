@@ -48,6 +48,8 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 230224: refer to `indexOf.js`. researching how to return which index an array element is located at. refer to **steps** section. need to follow steps to put `where` function together.
+- 230224: got advice from [fb post](https://www.facebook.com/groups/1605550896386197/permalink/3693868514221081/?mibextid=c7yyfP).
 - 190224: still confused by how example sort comparison function works. refer to `sort.js`. posted question in fb group: "HTML, CSS & Javascript." watched video in link 1 in **resources** but still don't understand.
 - 170224: refer to `sort.js`. trying to understand example from fcc article. **debug** the example to understand what's happening.
 - 170224: find out how to sort the elements in an array so they are in ascending order.
