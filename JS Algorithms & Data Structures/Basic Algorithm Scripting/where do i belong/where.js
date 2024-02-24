@@ -1,13 +1,24 @@
 function getIndexToIns(arr, num) {
+  // appends 'num' to 'arr'
+  arr.push(num);
+  console.log("appended array:", arr);
+
+  // sorts array
   arr.sort((a, b) => a - b);
-  console.log(arr);
-  for(i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-  }
+  console.log("sorted array:", arr);
+  
+  // return the LOWEST index where the NEW element has been inserted
+  // should use .findIndex()
+
+
+  // for(i = 0; i < arr.length; i++) {
+  //   console.log(arr[i]);
+  // }
+
   // return num;
   }
   
-getIndexToIns([40, 60], 50);
+getIndexToIns([40, 60], 50); // should return 1.
 
 // getIndexToIns([10, 20, 30, 40, 50], 35)  // should return 3.
 // getIndexToIns([10, 20, 30, 40, 50], 35)  // should return a number.

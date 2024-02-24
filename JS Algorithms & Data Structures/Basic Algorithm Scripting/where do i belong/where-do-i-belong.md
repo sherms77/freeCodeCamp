@@ -21,6 +21,8 @@ eg: [3,5,19,20] - `19` should be inserted at index `2`.
 # resources
 1. [16.9: Array Functions: sort() - Topics of JavaScript/ES6](https://www.youtube.com/watch?v=MWD-iKzR2c8&t=182s)
 2. [JavaScript Sort Array - How to Sort an Array Accurately](https://www.freecodecamp.org/news/how-to-sort-javascript-array-accurately/)
+3. [Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
+4. [JavaScript ES6 Arrow Functions Tutorial](https://www.youtube.com/watch?v=h33Srr5J9nY)
 
 # lesson code
 function getIndexToIns(arr, num) {
@@ -48,6 +50,9 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 250224: unsure how `arrow` function in article in point `3` works. refer to `findIndex.js` file. **steps**: 
+  1. finish watching example in video in point `4` in **resources**.
+  2. understand how `arrow` function works in `findIndex.js` file.
 - 230224: refer to `indexOf.js`. researching how to return which index an array element is located at. refer to **steps** section. need to follow steps to put `where` function together.
 - 230224: got advice from [fb post](https://www.facebook.com/groups/1605550896386197/permalink/3693868514221081/?mibextid=c7yyfP).
 - 190224: still confused by how example sort comparison function works. refer to `sort.js`. posted question in fb group: "HTML, CSS & Javascript." watched video in link 1 in **resources** but still don't understand.
