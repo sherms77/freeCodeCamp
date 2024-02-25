@@ -50,6 +50,7 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 250224: tryiing to understand example in video in point `4` in **resources**. where does the `person` variable need to be defined for it to work? example explanation is confusing when explaining **variable scoping**.
 - 250224: unsure how `arrow` function in article in point `3` works. refer to `findIndex.js` file. **steps**: 
   1. finish watching example in video in point `4` in **resources**.
   2. understand how `arrow` function works in `findIndex.js` file.
