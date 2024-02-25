@@ -50,6 +50,7 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 260224: unable to get the `regular` function to work in `arrow.js`. don't know where i need to declare the `person` variable to understand the difference in scoping variables between a `regular` function and an `arrow` function. left comment on video and posted question in JS fb group. **Next step**: 1. understand why my code isn't working. 2. workout where to declare variable to understand difference in variable scoping between `regular` and `arrow` functions.
 - 250224: tryiing to understand example in video in point `4` in **resources**. where does the `person` variable need to be defined for it to work? example explanation is confusing when explaining **variable scoping**.
 - 250224: unsure how `arrow` function in article in point `3` works. refer to `findIndex.js` file. **steps**: 
   1. finish watching example in video in point `4` in **resources**.
