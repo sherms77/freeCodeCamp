@@ -9,6 +9,9 @@ function getIndexToIns(arr, num) {
   
   // return the LOWEST index where the NEW element has been inserted
   // should use .findIndex()
+  // const isLargeNumber = (element) => element > 9;
+  // 260224: need to work out how to get the index of where the second argument from the function has been inserted
+  const isLargeNumber = (element) => element > array1.length;
 
 
   // for(i = 0; i < arr.length; i++) {
