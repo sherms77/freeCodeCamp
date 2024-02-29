@@ -50,6 +50,8 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 010324: refer to `where.js`. working out how to check for the first number that is **bigger** than `num` and then return the index of that number.
+- 010324: looked at hint. first hint is to sort the array. second hint says "check for the first number that is **bigger** and return the index. **bigger** than what? -> check for the first number that is **bigger** than the number in the second argument of the function - `num`.
 - 260224: refer to `where.js`. working out how to get the `index` of where the element in the `second` argument from the function has been `inserted`.
 - 260224: unable to understand example in `arrow.js` file. refer to video in point `4` in **resources**.
 - 260224: unable to get the `regular` function to work in `arrow.js`. don't know where i need to declare the `person` variable to understand the difference in scoping variables between a `regular` function and an `arrow` function. left comment on video and posted question in JS fb group. **Next steps**: 1. understand why my code isn't working. 2. workout where to declare variable to understand difference in variable scoping between `regular` and `arrow` functions.
