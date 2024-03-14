@@ -50,6 +50,19 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 150324: ran this code in fcc editor. passed 9 tests. need to analyse and debug.
+```
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] > num) {
+      let val = arr[i];
+      return (arr.indexOf(val));
+    }
+  }
+}
+```
 - 010324: refer to `where.js`. working out how to check for the first number that is **bigger** than `num` and then return the index of that number.
 - 010324: looked at hint. first hint is to sort the array. second hint says "check for the first number that is **bigger** and return the index. **bigger** than what? -> check for the first number that is **bigger** than the number in the second argument of the function - `num`.
 - 260224: refer to `where.js`. working out how to get the `index` of where the element in the `second` argument from the function has been `inserted`.
