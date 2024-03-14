@@ -1,33 +1,21 @@
 function getIndexToIns(arr, num) {
-  // appends 'num' to 'arr'
-  // arr.push(num);
-  // console.log("appended array:", arr);
 
   // sorts array
   arr.sort((a, b) => a - b);
   console.log("sorted array:", arr);
   
-  // return the LOWEST index where the NEW element has been inserted
-  // should use .findIndex()
-  // const isLargeNumber = (element) => element > 9;
-  // 260224: need to work out how to get the index of where the second argument from the function has been inserted
-  // const isLargeNumber = (element) => element > arr.length;
-  
-  // const lowElement = (element) => element > arr[0];
-  // console.log(lowElement);
-  // console.log(arr.findIndex(lowElement));
-
-  // const checkNum = arr[0] - num;
-  // console.log(checkNum);
-
-
   // check if the element is bigger than 'num'
   for(i = 0; i < arr.length; i++) {
     // console.log(arr[i]);
 
-    // need to return the number from the number at an index -> check if its > num -> then return the index of the where the larger number
+    // need to return the number from the number at an index
+    // check if its > num -> then return the index of the where the larger number
     if (arr[i] > num) {
-      console.log(arr[i]);
+      // console.log(arr[i]);
+      let val = arr[i];
+      // console.log(val);
+      console.log(arr.indexOf(val)); // returns index of array element > num
+      // console.log(arr.indexOf[i]); // does not work with [i] when usding .indexOf()
     }
   }
 
