@@ -2,32 +2,24 @@ function getIndexToIns(arr, num) {
 
   // sorts array
   arr.sort((a, b) => a - b);
-  console.log("sorted array:", arr);
+  // console.log("sorted array:", arr);
   
   // check if the element is bigger than 'num'
   for(i = 0; i < arr.length; i++) {
-    // console.log(arr[i]);
-
-    // need to return the number from the number at an index
-    // check if its > num -> then return the index of the where the larger number
-    if (arr[i] > num) {
-      // console.log(arr[i]);
+    if (arr[i] >= num) {
       let val = arr[i];
       // console.log(val);
       console.log(arr.indexOf(val)); // returns index of array element > num
-      // console.log(arr.indexOf[i]); // does not work with [i] when usding .indexOf()
-    }
+    } // 160324: NEED TO ADD A CONDITION TO HANDLE IF THE ARRAY ELEMENTS ARE <= 'NUM'.
   }
 
-  // return num;
-
-  }
+}
   
 // getIndexToIns([40, 60], 50); // should return 1.
 
-getIndexToIns([10, 20, 30, 40, 50], 35)  // should return 3. -> 010324: should return 40 based on my current for loop.
+// getIndexToIns([10, 20, 30, 40, 50], 35)  // should return 3.
 // getIndexToIns([10, 20, 30, 40, 50], 35)  // should return a number.
-// getIndexToIns([10, 20, 30, 40, 50], 30)  // should return 2.
+// getIndexToIns([10, 20, 30, 40, 50], 30)  // should return 2. -> 160324: THIS DOES NOT RETURN 2?
 // getIndexToIns([10, 20, 30, 40, 50], 30)  // should return a number.
 // getIndexToIns([40, 60], 50)  // should return 1.
 // getIndexToIns([40, 60], 50)  // should return a number.
@@ -37,7 +29,10 @@ getIndexToIns([10, 20, 30, 40, 50], 35)  // should return 3. -> 010324: should r
 // getIndexToIns([5, 3, 20, 3], 5)  // should return a number.
 // getIndexToIns([2, 20, 10], 19)  // should return 2.
 // getIndexToIns([2, 20, 10], 19)  // should return a number.
-// getIndexToIns([2, 5, 10], 15)  // should return 3.
+
+// 160324: FAILING THESE TESTS IN FCC EDITOR
+getIndexToIns([2, 5, 10], 15)  // should return 3.
+getIndexToIns([2, 5], 15)
 // getIndexToIns([2, 5, 10], 15)  // should return a number.
 // getIndexToIns([], 1)  // should return 0.
 // getIndexToIns([], 1)  // should return a number. - unsure what output of this test should be?
