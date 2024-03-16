@@ -50,7 +50,7 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
-- 170324: unable to get alternate condition to work where `if element is <= num -> output: num or index of element`. code i tried in fcc editor:
+- 170324: unable to get alternate condition to work where `if element is <= num -> output: num or index of element`. refer to debugger. trying to debug and understand what's happening. when I use `else` or `else if` statement, test: `getIndexToIns([10, 20, 30, 40, 50], 35) should return 3.` fails but it passed prio to adding the `else` or `else if` statement. code i tried in fcc editor:
 ```
 function getIndexToIns(arr, num) {
   arr.sort((a, b) => a - b);
