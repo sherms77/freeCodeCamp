@@ -50,6 +50,30 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 170324: unable to get alternate condition to work where `if element is <= num -> output: num or index of element`. code i tried in fcc editor:
+```
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b);
+
+  for(let i = 0; i < arr.length; i++) {
+    // let val = arr[i];
+    if (arr[i] >= num) {
+      let val = arr[i];
+      return (arr.indexOf(val));
+    } else if (arr[i] <= num) {
+      let val2 = arr[i];
+      return (arr.indexOf(val2))
+    } 
+    
+    // else {
+    //   return num;
+    // }
+
+  }
+}
+
+getIndexToIns([40, 60], 50);
+```
 - 160324: Need to add a condition to this case: If the array elements are <= 'num'.
 - 160324: updated `line 60` in my code below to `if (arr[i] >= num)`. passed 12/16 tests. didn't pass last `4` tests.
 - 150324: ran this code in fcc editor. passed 9 tests. need to analyse and debug.
