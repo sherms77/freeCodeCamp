@@ -50,6 +50,7 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 180324: refer to `where2.js`. is the error in my logic for the `else` or `else if` statement the fact that `num` is not added to the array which means the `output` cannot return the `index` of where the `new element` will be inserted?
 - 170324: unable to get alternate condition to work where `if element is <= num -> output: num or index of element`. refer to debugger. trying to debug and understand what's happening. when I use `else` or `else if` statement, test: `getIndexToIns([10, 20, 30, 40, 50], 35) should return 3.` fails but it passed prio to adding the `else` or `else if` statement. code i tried in fcc editor:
 ```
 function getIndexToIns(arr, num) {
