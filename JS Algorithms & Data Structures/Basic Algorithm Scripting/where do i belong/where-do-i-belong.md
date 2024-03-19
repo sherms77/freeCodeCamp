@@ -50,6 +50,66 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
+- 200324: revised code in fcc editor to use `return` statements. got mixed results. passed some tests. revised code:
+```
+function getIndexToIns(arr, num) {
+  // adds new element
+  arr.push(num);
+
+  // sorts array
+  arr.sort((a, b) => a - b);
+
+  // iterates array
+  for(let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+
+    // check if the element is >= num
+    if (arr[i] >= num) {
+      return arr.indexOf(val);
+      break;
+    } 
+    
+    // handles if element is <= num
+    else if (arr[i] <= num) {
+    return arr.indexOf(val);
+    }
+
+  }
+}
+
+getIndexToIns([40, 60], 50);
+
+```
+- 200324: this version of the code fails all tests in fcc editor. gets correct output in my tests in node.js. i don't think fcc lets me add the new element to the array to get the correct output. ie: I'm not allowed to `mutate` the orginal array. refer to `where2.js` for code.
+```
+function getIndexToIns(arr, num) {
+  // adds new element
+  arr.push(num);
+
+  // sorts array
+  arr.sort((a, b) => a - b);
+
+  // iterates array
+  for(let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+
+    // check if the element is >= num
+    if (arr[i] >= num) {
+      console.log(arr.indexOf(val));
+      break;
+    } 
+    
+    // handles if element is <= num
+    else if (arr[i] <= num) {
+    console.log(arr.indexOf(val));
+    }
+
+  }
+}
+
+getIndexToIns([40, 60], 50);
+
+```
 - 180324: refer to `where2.js`. is the error in my logic for the `else` or `else if` statement the fact that `num` is not added to the array which means the `output` cannot return the `index` of where the `new element` will be inserted?
 - 170324: unable to get alternate condition to work where `if element is <= num -> output: num or index of element`. refer to debugger. trying to debug and understand what's happening. when I use `else` or `else if` statement, test: `getIndexToIns([10, 20, 30, 40, 50], 35) should return 3.` fails but it passed prio to adding the `else` or `else if` statement. code i tried in fcc editor:
 ```
