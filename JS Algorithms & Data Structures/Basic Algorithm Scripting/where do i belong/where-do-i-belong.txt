@@ -1,0 +1,20 @@
+function getIndexToIns(arr, num) {
+  // adds new element
+  arr.push(num);
+
+  // sorts array
+  arr.sort((a, b) => a - b);
+
+  // iterates array
+  for(let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+
+    // check if the element is >= num
+    if (arr[i] >= num) {
+      return arr.indexOf(val);
+      break;
+    } 
+  }
+}
+
+getIndexToIns([40, 60], 50);

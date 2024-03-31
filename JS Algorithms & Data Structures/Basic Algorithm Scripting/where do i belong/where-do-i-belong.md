@@ -50,7 +50,8 @@ getIndexToIns([], 1) should return 0.
 getIndexToIns([], 1) should return a number. - unsure what output of this test should be?
 
 # notes
-- 200324: revised code in fcc editor to use `return` statements. got mixed results. passed some tests. revised code:
+- 010424: **solved** lesson. refer to `where-do-i-belong.txt` for solution. removed `else if` statement and code worked.
+- 200324: revised code in fcc editor to use `return` statements. got mixed results. passed some tests. **NEXT STEP**: 1. debug code. revised code:
 ```
 function getIndexToIns(arr, num) {
   // adds new element
