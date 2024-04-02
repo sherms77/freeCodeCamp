@@ -52,6 +52,8 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 030424: need to think how to sort characters in string in alphabetical order before i can check if one string is inlucded in the other.
+- 030424: `.includes()` requires characters to be in order to detect its present in the other `string`.
 - 030424: refer to answers in questions `1` and `2` in **questions** section. also refer to `string_compare.js`.
 - 030424: revised questions in **questions** section. answered question `1`.
 - 010424: try to answer question 1 in **questions** section.
