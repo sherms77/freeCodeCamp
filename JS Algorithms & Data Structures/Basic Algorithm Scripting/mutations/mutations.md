@@ -11,8 +11,8 @@ The arguments ["hello", "hey"] should return false because the string hello does
 Lastly, ["Alien", "line"], should return true because all of the letters in line are present in Alien.
 
 # steps
-1. traverse each character in each element
-2. compare them
+1. sort the characters in the string in each element alphabetically
+2. compare them to if the characters in element `2` are present in element `1`
 3. if the characters in element `2` are present in element `1`, return `true`. else `false`.
 
 # rules
@@ -52,6 +52,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 050424: refer to `mutations.js`. putting together how to **sort** charachters in alpha order, then **check** if characters in element `2` are present in element `1`.
 - 030424: need to think how to sort characters in string in alphabetical order before i can check if one string is inlucded in the other.
 - 030424: `.includes()` requires characters to be in order to detect its present in the other `string`.
 - 030424: refer to answers in questions `1` and `2` in **questions** section. also refer to `string_compare.js`.
