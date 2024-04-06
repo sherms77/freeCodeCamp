@@ -52,6 +52,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 070424: refer to `sort.js`. element `Mary` does not alpha sort with an uppercase `M`??
 - 050424: refer to `mutations.js`. putting together how to **sort** charachters in alpha order, then **check** if characters in element `2` are present in element `1`.
 - 030424: need to think how to sort characters in string in alphabetical order before i can check if one string is inlucded in the other.
 - 030424: `.includes()` requires characters to be in order to detect its present in the other `string`.
