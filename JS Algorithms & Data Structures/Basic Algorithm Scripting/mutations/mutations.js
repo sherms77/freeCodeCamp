@@ -3,18 +3,9 @@ function mutation(arr) {
     console.log("Original array:", arr);
     newArr = [];
 
-    // convert characters in each element to lower case
-    // might need to use a loop to convert both elements in the array to lower case + sort each element in alpha order
-
     for(let i = 0; i < arr.length; i++) {
-        // arr[i].toLowerCase(); // convert characters in each element to lower case
-        
-        console.log("Converted to lower case:", arr[i].toLowerCase()); // convert characters in each element to lower case
-        
-        var sortStr = arr[i].split("").sort().join(""); // sorts characters in each string
-        
-        console.log("Sorted characters:", sortStr);
-        
+        var lower = arr[i].toLowerCase(); // convert characters in each element to lower case
+        var sortStr = lower.split("").sort().join(""); // sorts characters in each string
         newArr.push(sortStr);
     }
 
@@ -29,13 +20,8 @@ function mutation(arr) {
 // mutation(["hello", "hey"]) // should return false. - WORKS
 // mutation(["hello", "Hello"]) // should return true.
 // mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true. - WORKS
-
-// mutation(["Mary", "Army"]) // should return true. - DOES NOT WORK
-
-mutation(["Army"]) // ADDED BY ME
-mutation(["Mary"]) // ADDED BY ME
-
-// mutation(["Mary", "Aarmy"]) // should return true.
+// mutation(["Mary", "Army"]) // should return true.
+mutation(["Mary", "Aarmy"]) // should return true. - DOES NOW WORK??
 // mutation(["Alien", "line"]) // should return true.
 // mutation(["floor", "for"]) // should return true.
 // mutation(["hello", "neo"]) // should return false. - WORKS

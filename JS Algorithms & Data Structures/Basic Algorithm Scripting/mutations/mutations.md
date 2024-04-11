@@ -52,6 +52,20 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 120424: refer to `mutations.js`. set variable to save element converted to lower case. that worked to address alpha sort issue discussed in note on `070424`. now this test no longer works `mutation(["Mary", "Aarmy"]) // should return true. - DOES NOW WORK??` unsure if it failed with previous code. might need to check. however, i tested code in fcc console and it fails all tests. code from fcc console below. unsure if i should keep working on this code or look for new method to check if characters are `present` in each element?
+```
+function mutation(arr) {
+    var newArr = [];
+
+    for(let i = 0; i < arr.length; i++) {
+        var lower = arr[i].toLowerCase(); 
+        var sortStr = lower.split("").sort().join("");
+        newArr.push(sortStr);
+    }
+
+    return newArr;
+}
+```
 - 070424: refer to `sort.js`. element `Mary` does not alpha sort with an uppercase `M`??
 - 050424: refer to `mutations.js`. putting together how to **sort** charachters in alpha order, then **check** if characters in element `2` are present in element `1`.
 - 030424: need to think how to sort characters in string in alphabetical order before i can check if one string is inlucded in the other.
