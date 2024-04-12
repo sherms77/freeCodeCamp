@@ -52,7 +52,9 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
-- 120424: refer to `strig_compare.js`, `mutations.js` and `debugging console`. cannot get these type of tests to return `true`: `mutation(["Noel", "Ole"])` and `mutation(["floor", "for"])`. have to keep debugging these tests to understand why my conditions to check if the characters are present in each element does **not** work.
+- 130424: refer to `regex.js` and `regex2.js`. trying `regex` method to check if **characters** exist in both strings **regardless** of their sequence.
+- 130424: refer to `string_compare.js`. the problem is that the string has to be in the exact same sequence in each element to return true. eg: for "elo" to be detected in "elnoqrst" the "n" cannot be in the middle of "el" and "o".
+- 120424: refer to `string_compare.js`, `mutations.js` and `debugging console`. cannot get these type of tests to return `true`: `mutation(["Noel", "Ole"])` and `mutation(["floor", "for"])`. have to keep debugging these tests to understand why my conditions to check if the characters are present in each element does **not** work.
 - 120424: i was missing this line in my code: `return newArr[0].includes(newArr[1]);`. added it. passed 9/11 tests.
 - 120424: refer to `mutations.js`. set variable to save element converted to lower case. that worked to address alpha sort issue discussed in note on `070424`. now this test no longer works `mutation(["Mary", "Aarmy"]) // should return true. - DOES NOW WORK??` unsure if it failed with previous code. might need to check. however, i tested code in fcc console and it fails all tests. code from fcc console below. unsure if i should keep working on this code or look for new method to check if characters are `present` in each element?
 ```

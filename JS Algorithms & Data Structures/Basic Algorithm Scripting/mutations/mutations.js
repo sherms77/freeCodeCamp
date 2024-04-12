@@ -25,7 +25,7 @@ function mutation(arr) {
 mutation(["Mary", "Aarmy"]) // should return true. - WORKS
 
 // mutation(["Alien", "line"]) // should return true.
-// mutation(["floor", "for"]) // should return true.
+mutation(["floor", "for"]) // should return true.
 // mutation(["hello", "neo"]) // should return false. - WORKS
 // mutation(["voodoo", "no"]) // should return false.
 mutation(["ate", "date"]) // should return false.
