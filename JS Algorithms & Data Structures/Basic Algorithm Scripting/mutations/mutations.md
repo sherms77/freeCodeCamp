@@ -52,6 +52,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 130424: refer to notes in `regex2.js`. trying to work out how to use it with either `.test()` or `.match()` to check if the characters in one element exists in the other.
 - 130424: refer to `regex.js` and `regex2.js`. trying `regex` method to check if **characters** exist in both strings **regardless** of their sequence.
 - 130424: refer to `string_compare.js`. the problem is that the string has to be in the exact same sequence in each element to return true. eg: for "elo" to be detected in "elnoqrst" the "n" cannot be in the middle of "el" and "o".
 - 120424: refer to `string_compare.js`, `mutations.js` and `debugging console`. cannot get these type of tests to return `true`: `mutation(["Noel", "Ole"])` and `mutation(["floor", "for"])`. have to keep debugging these tests to understand why my conditions to check if the characters are present in each element does **not** work.
