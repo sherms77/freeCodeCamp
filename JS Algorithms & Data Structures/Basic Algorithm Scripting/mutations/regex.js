@@ -1,7 +1,11 @@
 // program to perform string comparison
 
-const string1 = 'JavaScript Program';
-const string2 = 'javascript program';
+// const string1 = 'JavaScript Program';
+// const string2 = 'javascript program';
+// const string2 = 'what is this';
+
+const string1 = "zyxwvutsrqponmlkjihgfedcba";
+const string2 = "qrstu"; // already in alpha order
 
 // create regex
 const pattern = new RegExp(string1, "gi");

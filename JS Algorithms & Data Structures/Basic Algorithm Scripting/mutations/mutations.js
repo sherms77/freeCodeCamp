@@ -10,7 +10,8 @@ function mutation(arr) {
     }
 
     console.log("New Array:", newArr)
-    console.log(newArr[0].includes(newArr[1]) || newArr[1].includes(newArr[0])); // check if characters in element 1 is present in element 2
+    console.log(newArr[0].includes(newArr[1]));
+    // console.log(newArr[0].includes(newArr[1]) || newArr[1].includes(newArr[0])); // check if characters in element 1 is present in element 2
     // return arr;
 }
 
