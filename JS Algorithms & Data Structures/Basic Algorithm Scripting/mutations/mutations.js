@@ -4,8 +4,9 @@ function mutation(arr) {
     newArr = [];
 
     for(let i = 0; i < arr.length; i++) {
-        var lower = arr[i].toLowerCase(); // convert characters in each element to lower case
-        var sortStr = lower.split("").sort().join(""); // sorts characters in each string
+        let lower = arr[i].toLowerCase(); // convert characters in each element to lower case
+        let sortStr = lower.split("").sort().join(""); // sorts characters in each string
+        console.log(sortStr); // prints sorted string
         newArr.push(sortStr);
     }
 
