@@ -27,6 +27,8 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 # resources
 1. [[JavaScript] - How to ignore case in JavaScript?](https://www.shecodes.io/athena/37854-how-to-ignore-case-in-javascript#:~:text=To%20ignore%20case%20in%20JavaScript%2C%20you%20can%20use%20one%20of,to%20perform%20case%2Dinsensitive%20comparisons.)
 2. [Compare Two Strings in JavaScript](https://www.scaler.com/topics/compare-two-strings-in-javascript/)
+3. [.indexOf()](https://www.w3schools.com/jsref/jsref_indexof.asp)
+4. [mutations hint](https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-mutations/16025)
 
 # lesson code
 ```
@@ -52,6 +54,8 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 250424: have to workout how to split the characters in each word in the array. refer to `split.js`.
+- 250424: looked at hint. refer to `mutations2.js`.
 - 190424: refer to `includes.js`. trying to understand behaviour of `.includes()`. if two characters are **not** together in the string it will return `false`. you can search the string from a starting index position. can possibly create a method to search the string from the start and end to find the appropiate characters. it may still prove problematic if the characters are not together - eg: `elno` and `elo` -> characters `elo` is not next to eachother/together in `elno`.
 - 170424: ran this code in fcc editor. it fails two tests - passes 9/11. fails `mutation(["Noel", "Ole"]) should return true` and `mutation(["floor", "for"]) should return true.` issue is the **characters** have to be in the **exactly** the same in the same sequence to meet the condition. Eg: `elno and elo` will not return `true` because `n` is in `elno`. tried seeing if other methods would work like `.indexOf()` `boolean operators`, `.match()`, `.test()`, `regex` and `.replace()`. Those methods don't appear to help resolve the issue. `regex` could work with `test` but will be difficult to establish how to get the right `regex` to check if characters exist in both `elements`. you possibly have to get the `regex` to update dynamically and to use both elements in the array to check eachother. the other option is to use a `standard pattern` but the problem is it may be too broad or limited in scope and will return **false positives or negatives**. also check notes from **130424** which discusses `sequencing` problem.
 - 130424: refer to notes in `regex2.js`. trying to work out how to use it with either `.test()` or `.match()` to check if the characters in one element exists in the other.
