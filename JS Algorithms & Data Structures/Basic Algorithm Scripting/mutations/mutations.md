@@ -54,6 +54,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 260424: working out how to `split` the sting into characters for each element in the the array. refer to `mutations2.js` and `split.js`.
 - 250424: `.split()` method automatically puts the characters into an array. need to work out how to compare the characters of each `character/element` in the split array to determine if they both exist and then return `true` if that's the case. looking into using `.indexOf()` to do it but there is a challenge as it will return the **first** instance of the character and return a result. Eg: `let text = hello;` `console.log(indexOf("l"));` will return `2` as that is the first instance of `l` in `hello`. refer to `split.js`, `loop.js` and `index_of.js`.
 - 250424: have to workout how to split the characters in each word in the array. refer to `split.js`.
 - 250424: looked at hint. refer to `mutations2.js`.

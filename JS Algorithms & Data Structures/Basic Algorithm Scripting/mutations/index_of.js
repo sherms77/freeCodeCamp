@@ -18,3 +18,5 @@ console.log(text.indexOf("e"));
 console.log(text.indexOf("k"));
 console.log(text.indexOf("Hello"));
 
+
+

@@ -3,14 +3,14 @@
 // Hint 3: A loop might help. Use indexOf() to check if the letter of the second word is on the first.
 
 function mutation(arr) {
-    console.log("original array:", arr);
+    // console.log("original array:", arr);
+    let s = arr.split("");
+    console.log(s);
 
     for(let i = 0; i < arr.length; i++) {
-        let lower = arr[i].toLowerCase(); // convert characters in each element to lower case
-        let sortStr = lower.split("").sort().join(""); // sorts characters in each string
-        console.log(arr[i]);
-        // console.log(sortStr); // prints sorted string
-        // newArr.push(sortStr);
+        // let lower = arr[i].toLowerCase(); // convert characters in each element to lower case
+        console.log(arr[i].split)
+        // console.log(arr[i].indexOf(arr[i]));
     }
     // return arr;
   }
