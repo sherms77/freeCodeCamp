@@ -54,6 +54,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 270424: refer to `mutaions2.js`. trying to loop over elements in `arr1` and `arr2` to check if all the characters in `arr2` are present in `arr1`. problem is trying to create the `paramater` for the second `argument` in the `for loop` that will loop over **all** characters in **both** arrays.
 - 260424: refer to `mutations2.js`. converted the strings in `arr` into `lower case` and then `split` the strings, in each element into seperate `characters` and saved them into their own `arrays`. need to work out how to use 
 `.indexOf()` to compare the characters to get the desired result.
 - 260424: working out how to `split` the sting into characters for each element in the the array. refer to `mutations2.js` and `split.js`.
