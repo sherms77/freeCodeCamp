@@ -7,13 +7,16 @@ function mutation(arr) {
     let arr2 = arr[1].toLowerCase().split("");
     let k = arr1.length + arr2.length;
 
-    for(let i = 0; i < arr1.length; i++) {
-        // console.log(arr1[i].indexOf(arr2[i])); 
-
-        // returns result for each characher in arr1 - NEED TO FIX                
-        if (arr1[i].indexOf(arr2[i]) >= 0) {
-            console.log(true);
-        } else {console.log(false)};
+    for(let i = 0; i < arr2.length; i++) {
+        console.log(arr1.indexOf(arr2[i]));
+             
+        if (arr1.indexOf(arr2[i]) === 0) {
+            console.log(false)
+            break;
+        } 
+        else {
+            console.log(true)
+        };
         
     }
     
@@ -21,8 +24,8 @@ function mutation(arr) {
 
   }
 
-// mutation(["hello", "hey"]) // should return false.
-mutation(["hello", "Hello"]) // should return true. - WORKS. RETURNS TRUE.
+mutation(["hello", "hey"]) // should return false.
+// mutation(["hello", "Hello"]) // should return true.
 // mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
 // mutation(["Mary", "Army"]) // should return true.
 // mutation(["Mary", "Aarmy"]) // should return true.
