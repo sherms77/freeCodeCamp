@@ -3,35 +3,33 @@
 // Hint 3: A loop might help. Use indexOf() to check if the letter of the second word is on the first.
 
 function mutation(arr) {
-    // console.log("original array:", arr);
-    // console.log(arr[0].toLowerCase().split(""));
     let arr1 = arr[0].toLowerCase().split("");
     let arr2 = arr[1].toLowerCase().split("");
+    let k = arr1.length + arr2.length;
 
-    // console.log(arr1);
-    // console.log(arr2);
+    for(let i = 0; i < arr1.length; i++) {
+        // console.log(arr1[i].indexOf(arr2[i])); 
 
-    // arr.length is the probelm. 
-    // it won't loop over the full length of arr1 and arr2 as there are only 2 elements in arr
-    // used length of arr2 to loop over elements in both arrays. 
-    // does not work in case where arr1 is shorter when applyting the 'if' statement.
-    for(let i = 0; i < arr2.length; i++) {
-        // console.log(arr1[i]);
-        // console.log(arr2[i]);
-        console.log(arr1[i].indexOf(arr2[i])); 
-
+        // returns result for each characher in arr1 - NEED TO FIX                
         if (arr1[i].indexOf(arr2[i]) >= 0) {
             console.log(true);
-        };
+        } else {console.log(false)};
         
     }
     
-    // console.log(j);
     // return arr;
 
   }
 
-
+// mutation(["hello", "hey"]) // should return false.
+mutation(["hello", "Hello"]) // should return true. - WORKS. RETURNS TRUE.
+// mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
+// mutation(["Mary", "Army"]) // should return true.
+// mutation(["Mary", "Aarmy"]) // should return true.
+// mutation(["Alien", "line"]) // should return true.
 // mutation(["floor", "for"]) // should return true.
-mutation(["ate", "date"]) // should return false. letters in first element does NOT contain ALL letters in second element
-// mutation(["Noel", "Ole"]) // should return true. - DOES NOT WORK??
+// mutation(["hello", "neo"]) // should return false.
+// mutation(["voodoo", "no"]) // should return false.
+// mutation(["ate", "date"]) // should return false.
+// mutation(["Tiger", "Zebra"]) // should return false.
+// mutation(["Noel", "Ole"]) // should return true. - DOES NOT WORK. SHOULD RETURN TRUE.
