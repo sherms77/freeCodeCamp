@@ -29,6 +29,8 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 2. [Compare Two Strings in JavaScript](https://www.scaler.com/topics/compare-two-strings-in-javascript/)
 3. [.indexOf()](https://www.w3schools.com/jsref/jsref_indexof.asp)
 4. [mutations hint](https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-mutations/16025)
+5. [How to make Array.indexOf() case insensitive in JavaScript ?](https://www.geeksforgeeks.org/how-to-make-array-indexof-case-insensitive-in-javascript/)
+6. [match letters in an array case insensitive javascript](https://www.google.com/search?q=match+letters+in+an+array+case+insensitive+javascript&oq=match+letters+in+an+array+case+insensitive+javascript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTQyMzUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
 
 # lesson code
 ```
@@ -54,9 +56,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
-- 301224: looking into converting elements in both arrays to **lower** case by using `.toLowerCase()` method. Eg: `str.toLowerCase()`. refer to:
-  - [How to make Array.indexOf() case insensitive in JavaScript ?](https://www.geeksforgeeks.org/how-to-make-array-indexof-case-insensitive-in-javascript/)
-  - [match letters in an array case insensitive javascript](https://www.google.com/search?q=match+letters+in+an+array+case+insensitive+javascript&oq=match+letters+in+an+array+case+insensitive+javascript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTQyMzUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8), and
+- 301224: looking into converting elements in both arrays to **lower** case by using `.toLowerCase()` method. Eg: `str.toLowerCase()`. refer to **points 5 & 6** in **resources**.
 - 280424: refer to `debugging` web console and `mutations2.js`. worked out that is should use 
 `arr1.indexOf(arr2[i])`. iterating both arrays with `[i]` was not right for **checking** if `characters` in 
 `arr[2]` was in `arr[1]`.
