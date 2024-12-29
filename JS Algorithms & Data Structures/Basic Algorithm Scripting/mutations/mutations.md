@@ -54,9 +54,12 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 301224: looking into converting elements in both arrays to **lower** case by using `.toLowerCase()` method. Eg: `str.toLowerCase()`. refer to:
+  - [How to make Array.indexOf() case insensitive in JavaScript ?](https://www.geeksforgeeks.org/how-to-make-array-indexof-case-insensitive-in-javascript/)
+  - [match letters in an array case insensitive javascript](https://www.google.com/search?q=match+letters+in+an+array+case+insensitive+javascript&oq=match+letters+in+an+array+case+insensitive+javascript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTQyMzUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8), and
 - 280424: refer to `debugging` web console and `mutations2.js`. worked out that is should use 
 `arr1.indexOf(arr2[i])`. iterating both arrays with `[i]` was not right for **checking** if `characters` in 
-`arr[2]` was in `arr[1]`. 
+`arr[2]` was in `arr[1]`.
 - 280424: refer to `mutations2.js`. combining length of `arr1` and `arr2` to use as number of times to loop over charachters didn't work. used `arr1.length` instead. that gave a better result but it returns the incorrect result for some tests.
 - 270424: refer to `mutaions2.js`. trying to loop over elements in `arr1` and `arr2` to check if all the characters in `arr2` are present in `arr1`. problem is trying to create the `paramater` for the second `argument` in the `for loop` that will loop over **all** characters in **both** arrays.
 - 260424: refer to `mutations2.js`. converted the strings in `arr` into `lower case` and then `split` the strings, in each element into seperate `characters` and saved them into their own `arrays`. need to work out how to use 
