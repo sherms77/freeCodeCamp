@@ -12,7 +12,7 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 
 # steps
 1. sort the characters in the string in each element alphabetically
-2. compare them to if the characters in element `2` are present in element `1`
+2. compare them to see if the characters in element `2` are present in element `1`
 3. if the characters in element `2` are present in element `1`, return `true`. else `false`.
 
 # rules
@@ -56,6 +56,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 070124: refer to `mutations2.js`. line `38` returns multiple outputs. returns `true` `3` times. line returns `4` outputs. `3` `true` and `1` `false`. unsure why. looks like the multiple outputs is what's causing the tests to fail in the fcc console. it should only return `1` output to verify that `letters` are in `each string`.
 - 301224: looking into converting elements in both arrays to **lower** case by using `.toLowerCase()` method. Eg: `str.toLowerCase()`. refer to **points 5 & 6** in **resources**.
 - 280424: refer to `debugging` web console and `mutations2.js`. worked out that is should use 
 `arr1.indexOf(arr2[i])`. iterating both arrays with `[i]` was not right for **checking** if `characters` in 
