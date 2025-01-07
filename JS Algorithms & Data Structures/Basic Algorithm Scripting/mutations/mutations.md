@@ -31,6 +31,7 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 4. [mutations hint](https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-mutations/16025)
 5. [How to make Array.indexOf() case insensitive in JavaScript ?](https://www.geeksforgeeks.org/how-to-make-array-indexof-case-insensitive-in-javascript/)
 6. [match letters in an array case insensitive javascript](https://www.google.com/search?q=match+letters+in+an+array+case+insensitive+javascript&oq=match+letters+in+an+array+case+insensitive+javascript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTQyMzUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+7. [return one output when comparing strings in two arrays](https://www.google.com/search?q=if+strings+in+two+arrays+match+only+return+one+output%2C+true+or+false&sca_esv=519e96c50f78252e&sxsrf=ADLYWIKGmbkK0cyL2x2DKGlJcCmOBAIe9A%3A1736278709788&ei=tYJ9Z9TqL8bvseMP7rKjsAw&ved=0ahUKEwiUmemdruSKAxXGd2wGHW7ZCMYQ4dUDCBA&uact=5&oq=if+strings+in+two+arrays+match+only+return+one+output%2C+true+or+false&gs_lp=Egxnd3Mtd2l6LXNlcnAiRGlmIHN0cmluZ3MgaW4gdHdvIGFycmF5cyBtYXRjaCBvbmx5IHJldHVybiBvbmUgb3V0cHV0LCB0cnVlIG9yIGZhbHNlMgQQIRgKSIe1A1C8K1jeswNwBngBkAEImAH5DaABlt0BqgETMC4yNy4yNi4yLjEuNy41LjQuMrgBA8gBAPgBAZgCQKACuIYBwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAhAQLhiABBjHARgnGIoFGK8BwgILEAAYgAQYkQIYigXCAgoQABiABBhDGIoFwgIEECMYJ8ICDhAuGIAEGMcBGI4FGK8BwgILEC4YgAQYsQMYgwHCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIIEC4YgAQYsQPCAgUQLhiABMICCBAAGIAEGLEDwgIFEAAYgATCAgoQABiABBgUGIcCwgILEAAYgAQYhgMYigXCAgYQABgWGB7CAggQABiABBiiBMICBRAAGO8FwgIFECEYoAHCAgUQIRifBcICBxAhGKABGArCAggQABiiBBiJBcICBBAhGBWYAwCIBgGQBgiSBw81LjIzLjI0LjIuNC4zLjOgB7L0Ag&sclient=gws-wiz-serp)
 
 # lesson code
 ```
@@ -56,6 +57,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 080124: need to work out how to return `one` result/output. need to look into comparing the `length` of the arrays to set a condition that will only return `one output`. refer to point `7` in `resources`.
 - 070124: refer to `mutations2.js`. line `38` returns multiple outputs. returns `true` `3` times. line `31` returns `4` outputs. `3` `true` and `1` `false`. unsure why. looks like the multiple outputs is what's causing the tests to fail in the fcc console. it should only return `1` output to verify that `letters` are in `each string`.
 - 301224: looking into converting elements in both arrays to **lower** case by using `.toLowerCase()` method. Eg: `str.toLowerCase()`. refer to **points 5 & 6** in **resources**.
 - 280424: refer to `debugging` web console and `mutations2.js`. worked out that is should use 
