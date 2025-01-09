@@ -10,18 +10,15 @@ function mutation(arr) {
     for(let i = 0; i < arr2.length; i++) {
         // console.log(arr1.indexOf(arr2[i]));
 
-        if (arr1.length !== arr2.length) { // this may not work
-             
-            if (arr1.indexOf(arr2[i]) === 0) {
-                console.log(false)
-                break;
-            } 
-            
-            else {
-                console.log(true)
-            } 
-        }
+        if (arr1.indexOf(arr2[i]) === 0) {
+            console.log(false)
+            break;
+        } 
         
+        else if (arr1.indexOf(arr2[i]) === 1) {
+            console.log(true)
+            break;
+        } 
     }
     
     // return arr;
@@ -29,8 +26,8 @@ function mutation(arr) {
   }
 
 // mutation(["hello", "hey"]) // should return false.
-// mutation(["hello", "Hello"]) // should return true.
-mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
+mutation(["hello", "Hello"]) // should return true.
+// mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
 // mutation(["Mary", "Army"]) // should return true.
 // mutation(["Mary", "Aarmy"]) // should return true.
 // mutation(["Alien", "line"]) // should return true.

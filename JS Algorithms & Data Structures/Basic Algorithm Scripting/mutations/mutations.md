@@ -57,6 +57,8 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 100124: revised the code in `mutations2.js` again to set an `else if` statement to output `true` if there is a `match`. i used: `else if (arr1.indexOf(arr2[i]) === 1)`. it didn't work.
+- 100124: updated the code in `mutations2.js` with `break;` statements at the end of each condition to limit the output to `1` `true or false` statement. it doesn't output the correct result for some arrays. its stopping
 - 080124: need to work out how to return `one` result/output. need to look into comparing the `length` of the arrays to set a condition that will only return `one output`. refer to point `7` in `resources`.
 - 070124: refer to `mutations2.js`. line `38` returns multiple outputs. returns `true` `3` times. line `31` returns `4` outputs. `3` `true` and `1` `false`. unsure why. looks like the multiple outputs is what's causing the tests to fail in the fcc console. it should only return `1` output to verify that `letters` are in `each string`.
 - 301224: looking into converting elements in both arrays to **lower** case by using `.toLowerCase()` method. Eg: `str.toLowerCase()`. refer to **points 5 & 6** in **resources**.
