@@ -57,7 +57,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
-- 120124: refer to `mutations3.js` trying to simpify code to only compare the elements in `arr1` and `arr2` - `if (arr1[i] === arr2[i])`. i added a `break` statement as soon as it returns `true` for the first `condition`. only problem is it needs to compare the all the elements in the string and then return `true` `once` if everything matches and `false` `once` if there is `one non-match`.
+- 120124: refer to `mutations3.js` trying to simpify the code to only compare the elements in `arr1` and `arr2` - `if (arr1[i] === arr2[i])`. i added a `break` statement as soon as it returns `true` for the first `condition`. only problem is it needs to compare the all the elements in the string and then return `true` `once` if everything matches and `false` `once` if there is `one non-match`.
 - 100124: revised the code in `mutations2.js` again to set an `else if` statement to output `true` if there is a `match`. i used: `else if (arr1.indexOf(arr2[i]) === 1)`. it didn't work.
 - 100124: updated the code in `mutations2.js` with `break;` statements at the end of each condition to limit the output to `1` `true or false` statement. it doesn't output the correct result for some arrays. its stopping
 - 080124: need to work out how to return `one` result/output. need to look into comparing the `length` of the arrays to set a condition that will only return `one output`. refer to point `7` in `resources`.
