@@ -32,6 +32,7 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 5. [How to make Array.indexOf() case insensitive in JavaScript ?](https://www.geeksforgeeks.org/how-to-make-array-indexof-case-insensitive-in-javascript/)
 6. [match letters in an array case insensitive javascript](https://www.google.com/search?q=match+letters+in+an+array+case+insensitive+javascript&oq=match+letters+in+an+array+case+insensitive+javascript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTQyMzUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
 7. [return one output when comparing strings in two arrays](https://www.google.com/search?q=if+strings+in+two+arrays+match+only+return+one+output%2C+true+or+false&sca_esv=519e96c50f78252e&sxsrf=ADLYWIKGmbkK0cyL2x2DKGlJcCmOBAIe9A%3A1736278709788&ei=tYJ9Z9TqL8bvseMP7rKjsAw&ved=0ahUKEwiUmemdruSKAxXGd2wGHW7ZCMYQ4dUDCBA&uact=5&oq=if+strings+in+two+arrays+match+only+return+one+output%2C+true+or+false&gs_lp=Egxnd3Mtd2l6LXNlcnAiRGlmIHN0cmluZ3MgaW4gdHdvIGFycmF5cyBtYXRjaCBvbmx5IHJldHVybiBvbmUgb3V0cHV0LCB0cnVlIG9yIGZhbHNlMgQQIRgKSIe1A1C8K1jeswNwBngBkAEImAH5DaABlt0BqgETMC4yNy4yNi4yLjEuNy41LjQuMrgBA8gBAPgBAZgCQKACuIYBwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAhAQLhiABBjHARgnGIoFGK8BwgILEAAYgAQYkQIYigXCAgoQABiABBhDGIoFwgIEECMYJ8ICDhAuGIAEGMcBGI4FGK8BwgILEC4YgAQYsQMYgwHCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIIEC4YgAQYsQPCAgUQLhiABMICCBAAGIAEGLEDwgIFEAAYgATCAgoQABiABBgUGIcCwgILEAAYgAQYhgMYigXCAgYQABgWGB7CAggQABiABBiiBMICBRAAGO8FwgIFECEYoAHCAgUQIRifBcICBxAhGKABGArCAggQABiiBBiJBcICBBAhGBWYAwCIBgGQBgiSBw81LjIzLjI0LjIuNC4zLjOgB7L0Ag&sclient=gws-wiz-serp)
+8. [how to compare two arrays in Javascript](https://www.freecodecamp.org/news/how-to-compare-arrays-in-javascript/)
 
 # lesson code
 ```
@@ -57,6 +58,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 140124: refer to `stringify.js` and point `8` in `resources`. tried code from `stringify.js` in fcc console. passed 6/12 tests. Eg: test `4 failed`. output should be `true` but returned `false`. might relate to the `length` of the two arrays not being `compared` correctly. will need to debug.
 - 120124: refer to `mutations3.js` trying to simpify the code to only compare the elements in `arr1` and `arr2` - `if (arr1[i] === arr2[i])`. i added a `break` statement as soon as it returns `true` for the first `condition`. only problem is it needs to compare the all the elements in the string and then return `true` `once` if everything matches and `false` `once` if there is `one non-match`.
 - 100124: revised the code in `mutations2.js` again to set an `else if` statement to output `true` if there is a `match`. i used: `else if (arr1.indexOf(arr2[i]) === 1)`. it didn't work.
 - 100124: updated the code in `mutations2.js` with `break;` statements at the end of each condition to limit the output to `1` `true or false` statement. it doesn't output the correct result for some arrays. its stopping
