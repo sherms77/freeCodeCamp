@@ -58,6 +58,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 160124: refer to `stringfy.js`. tried sorting the arrays then comparing using `JSON.stringify`. it didn't work for all tests. test `3` failed. `JSON.stringify` only converts the array to a ` serialized JSON string`. the comparisons don't work as intended because when you have an array where the `letter` is `not` in the same position as the other array it will return `false`. ie: in `arr1 = [amry]` and ` arr2 = [aamry]` its comparing `m` in `arr1` with `a` in `arr2` which returns `false`.
 - 140124: refer to `stringify.js` and point `8` in `resources`. tried code from `stringify.js` in fcc console. passed 6/12 tests. Eg: test `4 failed`. output should be `true` but returned `false`. might relate to the `length` of the two arrays not being `compared` correctly. will need to debug.
 - 120124: refer to `mutations3.js` trying to simpify the code to only compare the elements in `arr1` and `arr2` - `if (arr1[i] === arr2[i])`. i added a `break` statement as soon as it returns `true` for the first `condition`. only problem is it needs to compare the all the elements in the string and then return `true` `once` if everything matches and `false` `once` if there is `one non-match`.
 - 100124: revised the code in `mutations2.js` again to set an `else if` statement to output `true` if there is a `match`. i used: `else if (arr1.indexOf(arr2[i]) === 1)`. it didn't work.

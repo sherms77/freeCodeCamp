@@ -5,9 +5,10 @@
 // Hint 3: A loop might help. Use indexOf() to check if the letter of the second word is on the first.
 
 function mutation(arr) {
-    let arr1 = arr[0].toLowerCase().split("");
-    let arr2 = arr[1].toLowerCase().split("");
-    // console.log(arr1);
+    let arr1 = arr[0].toLowerCase().split("").sort();
+    let arr2 = arr[1].toLowerCase().split("").sort();
+    // console.log(arr1)
+    // console.log(arr2);
 
     if (JSON.stringify(arr1) === JSON.stringify(arr2)) {
         console.log(true); 
@@ -18,11 +19,11 @@ function mutation(arr) {
 
 }
 
-// mutation(["hello", "hey"]) // should return false.
-// mutation(["hello", "Hello"]) // should return true.
-// mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
+mutation(["hello", "hey"]) // should return false.
+mutation(["hello", "Hello"]) // should return true.
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
 mutation(["Mary", "Army"]) // should return true.
-// mutation(["Mary", "Aarmy"]) // should return true.
+mutation(["Mary", "Aarmy"]) // should return true.
 // mutation(["Alien", "line"]) // should return true.
 // mutation(["floor", "for"]) // should return true.
 // mutation(["hello", "neo"]) // should return false.
