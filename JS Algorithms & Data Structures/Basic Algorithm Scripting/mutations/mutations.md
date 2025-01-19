@@ -34,6 +34,7 @@ Lastly, ["Alien", "line"], should return true because all of the letters in line
 7. [return one output when comparing strings in two arrays](https://www.google.com/search?q=if+strings+in+two+arrays+match+only+return+one+output%2C+true+or+false&sca_esv=519e96c50f78252e&sxsrf=ADLYWIKGmbkK0cyL2x2DKGlJcCmOBAIe9A%3A1736278709788&ei=tYJ9Z9TqL8bvseMP7rKjsAw&ved=0ahUKEwiUmemdruSKAxXGd2wGHW7ZCMYQ4dUDCBA&uact=5&oq=if+strings+in+two+arrays+match+only+return+one+output%2C+true+or+false&gs_lp=Egxnd3Mtd2l6LXNlcnAiRGlmIHN0cmluZ3MgaW4gdHdvIGFycmF5cyBtYXRjaCBvbmx5IHJldHVybiBvbmUgb3V0cHV0LCB0cnVlIG9yIGZhbHNlMgQQIRgKSIe1A1C8K1jeswNwBngBkAEImAH5DaABlt0BqgETMC4yNy4yNi4yLjEuNy41LjQuMrgBA8gBAPgBAZgCQKACuIYBwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAhAQLhiABBjHARgnGIoFGK8BwgILEAAYgAQYkQIYigXCAgoQABiABBhDGIoFwgIEECMYJ8ICDhAuGIAEGMcBGI4FGK8BwgILEC4YgAQYsQMYgwHCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIIEC4YgAQYsQPCAgUQLhiABMICCBAAGIAEGLEDwgIFEAAYgATCAgoQABiABBgUGIcCwgILEAAYgAQYhgMYigXCAgYQABgWGB7CAggQABiABBiiBMICBRAAGO8FwgIFECEYoAHCAgUQIRifBcICBxAhGKABGArCAggQABiiBBiJBcICBBAhGBWYAwCIBgGQBgiSBw81LjIzLjI0LjIuNC4zLjOgB7L0Ag&sclient=gws-wiz-serp)
 8. [how to compare two arrays in Javascript](https://www.freecodecamp.org/news/how-to-compare-arrays-in-javascript/)
 9. [8 must know javascript array methods](https://www.youtube.com/watch?v=R8rmfD9Y5-c)
+9. [check if all the elements of an array contains in another array in js](https://youtu.be/FuUCLHFahLA?si=W7dSwWUULeojPvy2)
 
 # lesson code
 ```
@@ -59,6 +60,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 200124: tried to use `every()` and `.includes()` methods as described in video in point `9` in `resources`. did not get desired output for all tests. failed test `1`. should have returned `false`. refer to `mutations4.js` and `every.js`.
 - 190124: reviewing how to use `.forEach()` and `.every()` methods to meet requirements. refer to point `9` in `resources`. testing in `mutations4.js` file.
 - 160124: refer to `stringfy.js`. tried sorting the arrays then comparing using `JSON.stringify`. it didn't work for all tests. test `3` failed. `JSON.stringify` only converts the array to a ` serialized JSON string`. the comparisons don't work as intended because when you have an array where the `letter` is `not` in the same position as the other array it will return `false`. ie: in `arr1 = [amry]` and ` arr2 = [aamry]` its comparing `m` in `arr1` with `a` in `arr2` which returns `false`.
 - 140124: refer to `stringify.js` and point `8` in `resources`. tried code from `stringify.js` in fcc console. passed 6/12 tests. Eg: test `4 failed`. output should be `true` but returned `false`. might relate to the `length` of the two arrays not being `compared` correctly. will need to debug.

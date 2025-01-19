@@ -2,13 +2,20 @@ function mutation(arr) {
     let arr1 = arr[0].toLowerCase().split("");
     let arr2 = arr[1].toLowerCase().split("");
 
-    arr1.forEach((arr1) => {
-        console.log(arr1)
-    })
+    const hasAllValue = arr1.every(element => {
+ 
+        if (arr2.includes(element)) {
+            console.log(true);
+            
+        } else {
+            console.log(false);
+        }
+    }) 
+}
 
-  }
 
-// mutation(["hello", "hey"]) // should return false.
+
+mutation(["hello", "hey"]) // should return false.
 // mutation(["hello", "Hello"]) // should return true.
 // mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
 // mutation(["Mary", "Army"]) // should return true.
