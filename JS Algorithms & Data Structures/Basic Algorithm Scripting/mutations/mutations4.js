@@ -1,25 +1,12 @@
-// JSON.stringify()
-
-// Hint 1: If everything is lowercase it will be easier to compare. - DONE
-// Hint 2: Our strings might be easier to work with if they were arrays of characters. - DONE BUT HOW TO COMPARE IN THIS STATE?
-// Hint 3: A loop might help. Use indexOf() to check if the letter of the second word is on the first.
-
 function mutation(arr) {
-    let arr1 = arr[0].toLowerCase().split("").sort();
-    let arr2 = arr[1].toLowerCase().split("").sort();
-    // console.log(arr1)
-    // console.log(arr2);
+    let arr1 = arr[0].toLowerCase().split("");
+    let arr2 = arr[1].toLowerCase().split("");
 
-    if (JSON.stringify(arr1) === JSON.stringify(arr2)) {
-        // return(true); 
-        console.log(true);
-        
-    } else {
-        // return(false);
-        console.log(false);
-    }
+    arr1.forEach((arr1) => {
+        console.log(arr1)
+    })
 
-}
+  }
 
 // mutation(["hello", "hey"]) // should return false.
 // mutation(["hello", "Hello"]) // should return true.
