@@ -1,3 +1,7 @@
+// arr1 = ["hello"]
+// arr2 = ["hey"]
+// "hello" does not contain "y" from arr2 should return false
+
 function mutation(arr) {
     let arr1 = arr[0].toLowerCase().split("");
     let arr2 = arr[1].toLowerCase().split("");
@@ -19,7 +23,7 @@ mutation(["hello", "hey"]) // should return false.
 // mutation(["hello", "Hello"]) // should return true.
 // mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
 // mutation(["Mary", "Army"]) // should return true.
-mutation(["Mary", "Aarmy"]) // should return true.
+// mutation(["Mary", "Aarmy"]) // should return true.
 // mutation(["Alien", "line"]) // should return true.
 // mutation(["floor", "for"]) // should return true.
 // mutation(["hello", "neo"]) // should return false.
