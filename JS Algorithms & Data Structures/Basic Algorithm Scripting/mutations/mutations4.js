@@ -2,23 +2,35 @@
 // arr2 = ["hey"]
 // "hello" does not contain "y" from arr2 should return false
 
-function mutation(arr) {
-    let arr1 = arr[0].toLowerCase().split("");
-    let arr2 = arr[1].toLowerCase().split("");
+// function mutation(arr) {
+//     let arr1 = arr[0].toLowerCase().split("");
+//     let arr2 = arr[1].toLowerCase().split("");
 
-    const hasAllValue = arr1.every(element => {
+//     const hasAllValue = arr1.every(element => {
  
-        if (arr2.includes(element)) {
-            console.log(true);
+//         if (arr2.includes(element)) {
+//             console.log(true);
             
-        } else {
-            console.log(false);
-        }
-    }) 
-}
+//         } else {
+//             console.log(false);
+//         }
+//     }) 
+// }
 
+function mutation(arr) {
+    let test = arr[1].toLowerCase();
+    let target = arr[0].toLowerCase();
+    for (let i = 0; i < test.length; i++) {
+      if (target.indexOf(test[i]) === -1) {
+        // return false;
+        console.log(false);
+      }
+    }
+    // return true;
+    console.log(true);
+  }
 
-
+  
 mutation(["hello", "hey"]) // should return false.
 // mutation(["hello", "Hello"]) // should return true.
 // mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) // should return true.
