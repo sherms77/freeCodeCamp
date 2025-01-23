@@ -60,6 +60,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 240124: still trying to debug `mutations4.js`. need to understand error in logic.
 - 220124: refer to `mutations4.js`. problem with my logic. function does not seem to be checking `every` letter in `arr1` against the letters in `arr2`. it only checks one letter. however, after inspecting the debugger output further, I can see it also returns `false` for test `1` but it doesn't `output` that result to the console. need to understand why this is the case.
 - 200124: tried to use `every()` and `.includes()` methods as described in video in point `9` in `resources`. did not get desired output for all tests. failed test `1`. should have returned `false`. refer to `mutations4.js` and `every.js`.
 - 190124: reviewing how to use `.forEach()` and `.every()` methods to meet requirements. refer to point `9` in `resources`. testing in `mutations4.js` file.
