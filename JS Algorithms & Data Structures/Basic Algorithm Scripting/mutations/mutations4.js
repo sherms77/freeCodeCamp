@@ -18,15 +18,32 @@
 // }
 
 function mutation(arr) {
-    let test = arr[0].toLowerCase();
-    let target = arr[1].toLowerCase();
+    // let test = arr[0].toLowerCase();
+    // let target = arr[1].toLowerCase();
+    let test = arr[0].toLowerCase().split('').sort().join('');
+    let target = arr[1].toLowerCase().split('').sort().join('');
+    // let sortStr = lower.split("").sort().join(""); // sorts characters in each string
+    
     for (let i = 0; i < test.length; i++) {
+      
       if (target.indexOf(test[i]) === -1) {
         return false;
-      } 
+        // console.log(false);
+      }   
+      
+      // else if (target.indexOf(test[i]) === 1) {
+      //   // return false;
+      //   console.log(true);
+      // } 
+      
     }
+
+    // console.log(true);
     return true;
+
   }
+
+  // console.log(false);
 
   
 mutation(["hello", "hey"]) // should return false.

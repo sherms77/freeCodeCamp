@@ -60,6 +60,7 @@ mutation(["Tiger", "Zebra"]) should return false.
 mutation(["Noel", "Ole"]) should return true.
 
 # notes
+- 290125: refer to `mutations4.js` and `web debug console`. I sorted the array to compare the elements but still got the incorrect output for test on `line 54` because the length of the arrays are different and the elements at index `[0]` in both arrays will be different. Eg: `test[0] = [a]` and `target[0] = [e]`. `test[1] = [e]`. So `test[1] = [a]` needs to be compared to `target[0] = [a]`.
 - 270125: tried coded from `mutations4.js` in `fcc console.` failed 5/12 tests. Eg: `test 3` failed. need to keep dubugging. still a problem with the logic.
 - 240125: still trying to debug `mutations4.js`. need to understand error in logic.
 - 220125: refer to `mutations4.js`. problem with my logic. function does not seem to be checking `every` letter in `arr1` against the letters in `arr2`. it only checks one letter. however, after inspecting the debugger output further, I can see it also returns `false` for test `1` but it doesn't `output` that result to the console. need to understand why this is the case.
