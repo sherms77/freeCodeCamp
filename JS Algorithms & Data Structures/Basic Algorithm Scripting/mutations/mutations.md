@@ -46,18 +46,18 @@ mutation(["hello", "hey"]);
 ```
 
 # tests
-mutation(["hello", "hey"]) should return false.
-mutation(["hello", "Hello"]) should return true.
-mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) should return true.
-mutation(["Mary", "Army"]) should return true.
-mutation(["Mary", "Aarmy"]) should return true.
-mutation(["Alien", "line"]) should return true.
-mutation(["floor", "for"]) should return true.
-mutation(["hello", "neo"]) should return false.
-mutation(["voodoo", "no"]) should return false.
-mutation(["ate", "date"]) should return false.
-mutation(["Tiger", "Zebra"]) should return false.
-mutation(["Noel", "Ole"]) should return true.
+1. mutation(["hello", "hey"]) should return false.
+2. mutation(["hello", "Hello"]) should return true.
+3. mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) should return true.
+4. mutation(["Mary", "Army"]) should return true.
+5. mutation(["Mary", "Aarmy"]) should return true.
+6. mutation(["Alien", "line"]) should return true.
+7. mutation(["floor", "for"]) should return true.
+8. mutation(["hello", "neo"]) should return false.
+9. mutation(["voodoo", "no"]) should return false.
+10. mutation(["ate", "date"]) should return false.
+11. mutation(["Tiger", "Zebra"]) should return false.
+12. mutation(["Noel", "Ole"]) should return true.
 
 # notes
 - 290125: refer to `mutations4.js` and `web debug console`. I sorted the array to compare the elements but still got the incorrect output for test on `line 54` because the length of the arrays are different and the elements at index `[0]` in both arrays will be different. Eg: `test[0] = [a]` and `target[0] = [e]`. `test[1] = [e]`. So `test[1] = [a]` needs to be compared to `target[0] = [a]`.
